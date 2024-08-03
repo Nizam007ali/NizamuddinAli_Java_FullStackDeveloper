@@ -20,7 +20,7 @@ int main()
 	int _123, price, Bob_salary, Price, ETC;
 	
 	/*Constants means unchangeable that is read-only. we use "const" keyword to
-	make a variable constant*/
+	make a variable constant.*/
 	const int FavouriteNumber = 7;
 	// FavouriteNumber = 11;	it will give error read=only variable
 	// notes: when you declare a constant variable you must assign value 
