@@ -8,6 +8,5 @@ public class ScopeOfVariable {
     public static void main(String args[])  
     {  
         int born=1999;//instance variable    
-    }  
+    }
 } 
-
