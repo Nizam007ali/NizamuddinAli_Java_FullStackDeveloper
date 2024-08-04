@@ -1,4 +1,4 @@
-public class scope_of_variable { 
+public class ScopeOfVariable { 
 {  
     static int myAge=24;//static (global) variable  
     void method()  
