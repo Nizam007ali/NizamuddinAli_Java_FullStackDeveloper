@@ -1,6 +1,7 @@
 public class VariableCasting { 
     public static void main(String args[])  
     {  
+        //double->float->long->int->short->byte
         int num=160;  
         float floatNum=num;               //widening
         System.out.println(num);  
