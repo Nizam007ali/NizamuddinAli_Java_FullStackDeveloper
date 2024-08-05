@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            document.getElementById("msg").innerHTML="Hello world! You must be thankful to me.";
+        }
+        function reset(){
+            document.getElementById("msg").innerHTML="Hello world! I am thankful to you.";
+        }
+    </script>
+</head>
+<body>
+    <h1>Script in head</h1>
+    <p id="msg">Hello world! I am thankful to you.</p>
+    <button onclick="myFun()">Click</button>
+    <button onclick="reset()">Reset</button>
+</body>
+</html>
