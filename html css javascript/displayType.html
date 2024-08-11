@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in JS</title>
+</head>
+<body>
+    <h1>Display types</h1>
+    <h3 id="hello"></h3>
+    <h4 id="sum"></h4>
+
+    <script>
+        //using innerhtml it work with predefined tag
+        document.getElementById("hello").innerHTML="Hello World!";
+        document.getElementById("sum").innerHTML=(3+9);
+
+        //document.write it write in the html page without any tag
+        document.write("Hello World! ");
+        document.write("<br>"); //for line change using br
+        document.write(5*3);
+
+        //alert(); or window.alert();   
+        window.alert("Hello World! ");
+        alert(8/4);  //window is global so we can skip it and alert function will work.
+    
+        //console.log
+        console.log("Hello World! ");
+        console.log(9-3);
+    </script>
+</body>
+</html>
