@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        /*id style */
+        #header{ 
+            border-radius: 5px;
+            margin: 0px;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+        }
+        /*without id class style creates confusion and overlapping*/
+        ul{
+            overflow: hidden;
+            margin-left: 480px;
+            display: flex;
+            list-style: none;
+        }
+        img{
+            margin: 10px;
+            height: 80px;
+        }
+        li{
+            text-align: center;
+            border-radius: 10px;
+            background-color: aqua;
+            margin-left: 60px;
+            font-size: 24px;
+        }
+        a{
+            width: 120px;
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+            color: rgb(218, 16, 16);
+        }
+        a:hover{
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+            color: aqua;
+            background-color: rgb(218, 16, 16);
+        }
+        /* class style */
+        .content{
+            margin-top: -20px;
+            width: 100%;
+            height: 500px;
+            background-color: aqua;
+        }
+        h1{
+            padding-top: 25px;
+            padding-left: 25px;
+        }
+        p{
+            font-size: 28px;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="images/favicon.png" alt="">
+        <ul>
+            <li><span style="margin-top: 33px;"></span><a href="">Home</span></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>hello world</h1>
+        <p>Most welcome to everyone. </p>
+    </div>
+</body>
+</html>
