@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+}
+.header{
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    font-size: 2vw;
+}
+.header img{
+    padding: 0.4vw;
+    height: 4vw;
+}
+.header ul{
+    display: flex;
+    padding: 1vw;
+    float: right;
+}
+.header ul li{
+    list-style: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+.productCompany{
+    z-index: 1;
+    width: 100%;
+    margin-top: 5vw;
+    position: fixed;
+    height: auto;
+    background-color: silver;
+    font-size: 1.2vw;
+}
+.productCompany ul{
+    display: flex;
+    padding-left: 10vw;
+}
+.productCompany ul li{
+    list-style: none;
+    padding: 1vw;
+    padding-right: 10vw;
+}
+#tata{
+    margin-top: 10vw;
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+hr.h1{
+    border-top: 0.2vw solid rgb(0, 0, 0);
+}
+.c1{
+    font-size: 2.5vw;
+    width: 100%;
+    text-align: center;
+}
+.product{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.item{
+    text-align: center;
+    font-size: 2vw;
+}
+.item img{
+    width: 80%;
+    padding: 10%;
+}
+.b1{
+    padding: 0.2vw;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+}
+#adani{
+    margin-top: 45vw;
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+#waaree{
+    margin-top: 80vw;
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+#vikram{
+    margin-top: 115vw;
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+#newsys{
+    margin-top: 150vw;
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+#about{
+    padding: 3vw;
+    text-align: justify;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    background-color: silver;
+    margin-top: 185vw;
+    position: absolute;
+}
+.footer{
+    margin-top: 197.8vw;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgb(0, 0, 0);
+}
+.footerhead{
+    padding: 2vw;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+}
+.icon{
+    padding: 1vw;
+    font-size: 1.5vw;
+    color: white;
+    letter-spacing: 5px;
+}
