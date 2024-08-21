@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator in string</title>
+</head>
+<body>
+
+    <script>
+        var fname = "Nizam", lname = "Ali";
+        var fullname = fname + " " + lname;     //concatenation using different variable
+        document.write("Fullname is "+fullname+"<br>");
+        var name = "Nizam";                     //concatenation using one variable
+        name+=" ali";
+        name+=".";
+        document.write("Name is "+name+"<br>");
+
+        var a = " age ", i = " is ", x = 10, y = 1;
+        document.write(a+i+x+y+"<br>");         //it takes x and y as string
+        document.write(a+i+(x+y)+"<br>");       //with the help og brackets it consider ir as int add them then add them to string i.e. concatenate
+        document.write(x+y+i+a+"<br>");         //if we start as integer no need for brackets
+
+    </script>
+
+</body>
+</html>
