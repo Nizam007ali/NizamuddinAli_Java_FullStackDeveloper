@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax</title>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        let x,y,z;          //creation      //single line comment
+        x = 51;             //assigning value
+        y = 10, z = x+y;     //multiple assigning value
+        /*x,y,z are literals                //multiple line comment
+        51,10 are variables*/
+        document.write(x+"+"+y+"="+z);
+
+        let text= "Nizam"+" "+"ali";
+        document.getElementById("text").innerHTML=text;
+
+        /*
+        in js programmer use different cases to name 
+        nizam_ali //underscore
+        nizamAli  //lower camel case(js programmer use it more)
+        NizamAli  //upper camel case
+        Js is case sensitive so all 3 are different.
+        */
+
+        // A JavaScript name must begin with:
+        // A letter (A-Z or a-z)
+        // A dollar sign ($)
+        // Or an underscore (_)
+        
+        let value = 15;
+        let Value = 25;
+        let $value = 35;
+        let _value = 45;
+        document.write("<br>"+value);
+        document.write("<br>"+Value);
+        document.write("<br>"+$value);
+        document.write("<br>"+_value);
+
+    </script>
+</body>
+</html>
