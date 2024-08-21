@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operator</title>
+</head>
+<body>
+
+    <script>
+        var a = 5, b = '5', c = 9;
+        document.write("a = "+a+" b = "+b+" c = "+c+"<br>");    
+        document.write("(a==b) : "+(a==b)+"<br>");              //value equal
+        document.write("(a===b) : "+(a===b)+"<br>");            //value equal and type also
+        document.write("(a!=b) : "+(a!=c)+"<br>");              //value not equal
+        document.write("(a!==c) : "+(a!=c)+"<br>");             //value not equal and type also
+        document.write("(a<c) : "+(a<c)+"<br>");                //less than    
+        document.write("(a<=c) : "+(a<=c)+"<br>");              //less than or equsl
+        document.write("(a>c) : "+(a>c)+"<br>");                //greater than
+        document.write("(a>=c) : "+(a>=c)+"<br>");              //greater than or equal
+        var d= (a>c)?a:c;                                       //ternary(in this we check for bigger in two, outcome is bigone)
+        document.write("(a>c)?a:c : "+d+"<br>");
+    </script>
+
+</body>
+</html>
