@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statements in JavaScript</title>
+</head>
+<body>
+    <h1>Statements</h1>
+    <p id="sum"></p>
+    <p id="ret"></p>
+    <button onclick="sum()">Sum</button>
+
+    <script>
+        let x = 4, y = 9, z;
+        z = x + y;
+        document.getElementById("sum").innerHTML="Sum of "+x+" and "+y+" is "+z;
+        function sum(){
+        x = 10; 
+        y = 20;
+        z = x + y;
+        document.getElementById("ret").innerHTML="Sum of "+x+" and "+y+" is "+z;
+        return z;
+        }
+        //document.getElementById("ret").innerHTML="Return of function sum is : "+sum(); //to use return in function
+
+        
+    </script>
+</body>
+</html>
