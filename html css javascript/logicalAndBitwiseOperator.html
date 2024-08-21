@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operator</title>
+</head>
+<body>
+
+    <script>
+
+        // logical operator
+        // x       y           x&&y        x||y        !x
+        // true    true        true        true        false
+        // true    false       false       true        -
+        // false   true        false       true        true
+        // false   false       false       false       -
+
+        var x = true, y = false, z;
+        document.write("x : "+x+" y : "+y+"<br>"+"<br>");
+        z = x&&y;                               //logical and
+        document.write("x&&y : "+z+"<br>");
+        z = x||y;                               //logical or
+        document.write("x||y : "+z+"<br>");
+        z = !y;                                 //logical not
+        document.write("!y : "+z+"<br>"+"<br>");
+
+        document.write("<hr>")
+
+        // bitwise operator
+        // x       y           x&y        x|y          ~x          x^y
+        // 1       1           1           1           0           0  
+        // 1       0           0           1           0           1   
+        // 0       1           0           1           1           1
+        // 0       0           0           0           1           0      
+        
+        var a = 5, b = 9, c;
+        document.write("a : "+a+" b : "+b+"<br>"+"<br>");
+        c = a&b;                            //and
+        document.write("a&b: "+c+"<br>");
+        c = a|b;                            //or
+        document.write("a|b: "+c+"<br>");
+        c = ~b;                             //not
+        document.write("~b: "+c+"<br>");
+        c = a^b;                            //xor
+        document.write("a&b: "+c+"<br>");
+        c = b>>1;                           //signed right shift
+        document.write("b>>1: "+c+"<br>");
+        c = a<<1;                           //signed left shift
+        document.write("a<<1: "+c+"<br>");
+        c = a>>>1;                          //unsigned right shift
+        document.write("a>>>1: "+c+"<br>");
+    </script>
+
+</body>
+</html>
