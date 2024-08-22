@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	int a, b, c, d;
+	int a, b, c;
 	cout<<"Maximum in three numbers."<<endl;
 	cout<<"First number : ";
 	cin>>a;
