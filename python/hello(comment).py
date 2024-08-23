@@ -1,0 +1,1 @@
+print("Hello World!");    #This will show hello world(single line comment, python doesnt havve multiline comment, so use #in every line for multiline)
