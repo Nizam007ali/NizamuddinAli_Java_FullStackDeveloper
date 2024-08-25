@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute</title>
+    <style>
+        h1{
+            font-size: 3vw;
+        }
+        h2{
+            font-size: 2.5vw;
+        }
+        p{
+            font-size: 1.5vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Action Attribute</h1>
+    <p>
+        The action attribute defines the action to be performed when the form is submitted. <br>
+        Usually, the form data is sent to a file on the server when the user clicks on the submit button. <br>
+        <b>action</b> = "/action_page.php"
+    </p>
+
+    <h1>2. Target Attribute</h1>
+    <p>
+        The target attribute specifies where to display the response that is received after submitting the form.
+        <br><br>
+        Value	Description <br>
+        _blank	The response is displayed in a new window or tab
+        <br>_self	The response is displayed in the current window
+        <br>_parent	The response is displayed in the parent frame
+        <br>_top	The response is displayed in the full body of the window
+        <br>framename	The response is displayed in a named iframe
+        <br>The default value is _self which means that the response will open in the current window.
+        <br><br>
+        <b>target</b>="_blank"
+    </p>
+
+    <h1>The Method Attribute</h1>
+    <p>
+        The method attribute specifies the HTTP method to be used when submitting the form data.
+        <br>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+        <br><br>
+        <b>method</b>="get" or <b>method</b>="post"
+    </p>
+    <h1>Autocomplete Attribute</h1>
+    <p>
+        The autocomplete attribute specifies whether a form should have autocomplete on or off.
+        <br>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+        <br><br>
+        <b>autocomplete</b>="on" or "off"
+    </p>
+    <h1>Novalidate Attribute</h1>
+    <p>
+        The novalidate attribute is a boolean attribute.
+        <br>When present, it specifies that the form-data (input) should not be validated when submitted.
+        <br><br>
+        <b>novalidate</b>
+    </p>
+    <h1>List of All &ltform&gt Attributes</h1>
+    <h2>Attribute&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description</h2>
+    <p>
+        <b>accept-charset</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies the character encodings used for form submission
+        <br><b>action</b>&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies where to send the form-data when a form is submitted
+        <br><b>autocomplete</b>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies whether a form should have autocomplete on or off
+        <br><b>enctype</b>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+        <br><b>method</b>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies the HTTP method to use when sending form-data
+        <br><b>name</b>&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies the name of the form
+        <br><b>novalidate</b>&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies that the form should not be validated when submitted
+        <br><b>rel</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies the relationship between a linked resource and the current document
+        <br><b>target</b>&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies where to display the response that is received after submitting the form
+            
+    </p>
+</body>
+</html>
