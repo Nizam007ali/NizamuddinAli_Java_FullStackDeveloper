@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Value Attributes</title>
+    <style>
+        *{
+            background-color: black;
+            text-align: justify;
+        }
+        h1{
+            font-size: 3vw;
+            color: aqua;
+        }
+        p{
+            color: white;
+            font-size: 2.5vw;
+        }
+        form{
+            color: white;
+            font-size: 2.5vw;
+        }
+        label{
+            color: white;
+            font-size: 2.5vw;
+        }
+        .i1{
+            background-color: white;
+            width: 30vw;
+            height: 2vw;
+            font-size: 2vw;
+        }
+        input{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Value Attribute</h1>
+    <p>
+        The input value attribute specifies an initial value for an input field:
+        <form action="">
+            <b>Default:</b> <br>
+            <br><label for="fname">First name:</label><br>
+            <input type="text" id="fname" class="i1" name="fname" value="Nizam"><br>
+            <br><b>Readonly Attribute :</b>The input readonly attribute specifies that an input field is read-only.
+            <br>A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+            <br>The value of a read-only input field will be sent when submitting the form!
+            <br><br><label for="clg">College::</label><br>
+            <input type="text" id="clg" class="i1" name="clg" value="NIIST" readonly>
+            <br><br><b>Disabled Attribute :</b>The input disabled attribute specifies that an input field should be disabled.
+            <br>A disabled input field is unusable and un-clickable.
+            <br>The value of a disabled input field will not be sent when submitting the form!
+            <br><br><label for="batch">Batch:</label><br>
+            <input type="batch" id="batch" class="i1" name="batch" value="Mca" disabled>
+            <br><br><b>Size Attribute:</b>The input size attribute specifies the visible width, in characters, of an input field.
+            <br>The default value for size is 20.
+            <br>Note: The size attribute works with the following input types: text, search, tel, url, email, and password.
+            <br><br><label for="clg">College:</label><br>
+            <input type="text" id="clg" class="i1" name="clg" value="Nri institute of information science And technology" size="50">
+            <br><br><b>Maxlength Attribute:</b>The input maxlength attribute specifies the maximum number of characters allowed in an input field.
+            <br>Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.
+            <br><br><label for="pin">Pin:</label><br>
+            <input type="text" id="pin" name="pin" value="****" maxlength="4" style="font-size: 2vw; width: 3.2vw;">
+            <br><br><b>Min and Max Attributes:</b>The input min and max attributes specify the minimum and maximum values for an input field.
+            <br>The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.
+            <br>Tip: Use the max and min attributes together to create a range of legal values.
+            <br><br><label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" value="1999-11-17" min="1950-01-01" max="2024-08-26">
+            <br><br><b>Multiple Attribute:</b>The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.
+            <br>The multiple attribute works with the following input types: email, and file.
+            <br><br><label for="files">Select files:</label><br>
+            <input type="file" id="files" style="font-size: 2vw; width: 12.8vw;" name="files" multiple>
+            <br><br><b>Pattern Attribute:</b>The input pattern attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.
+            <br>The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.
+            <br><br><b>Placeholder Attribute:</b>The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
+            <br>The short hint is displayed in the input field before the user enters a value.
+            <br>The placeholder attribute works with the following input types: text, search, url, number, tel, email, and password.
+            <br><br><label for="phone">Phone:</label><br>
+            <input type="text" id="phone" style="font-size: 2vw; width: 12.5vw;" name="phone" placeholder="987-654-3210" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br><br><b>Required Attribute</b>The input required attribute specifies that an input field must be filled out before submitting the form.
+            <br>The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+            <br><br><label for="email">Email:</label><br>
+            <input type="email" id="email" class="i1" name="email" required>
+            <br><br><b>Autofocus Attribute:</b>The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+            <br><br><b>Autocomplete Attribute:</b>The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+            <br>The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.
+            <br>Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.
+            <br>The autocomplete attribute works with &ltform> and the following &ltinput> types: text, search, url, tel, email, password, datepickers, range, and color.
+            <br><br><label for="username">Username:</label><br>
+            <input type="rxt" id="username" class="i1" name="username" autofocus autocomplete="on">
+            <br><br><b>Step Attributes:</b>The input step attribute specifies the legal number intervals for an input field.
+            <br>Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+            <br>Tip: This attribute can be used together with the max and min attributes to create a range of legal values.
+            <br>The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.
+            <br><br><label for="r">Range:</label><br>
+            0<input type="range" id="r" style="font-size: 2vw; width: 12.8vw;" name="r" step="5">100
+            <br><br><b>Height and width Attributes:</b>The input height and width attributes specify the height and width of an &ltinput type="image"> element.
+            <br><br><label for="img">Submit:</label><br>
+            <input type="image" id="img" name="img"  src="/html css/images/hello.png" alt="Submit" width="15%" height="auto">
+            <br><br><b>List Attribute:</b>The input list attribute refers to a &ltdatalist> element that contains pre-defined options for an &ltinput> element.
+            <br><br><input list="browsers" class="i1">
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+        </form>
+    </p>
+</body>
+</html> 
+
+
+
+
+
+
