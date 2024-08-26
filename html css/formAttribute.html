@@ -45,26 +45,34 @@
         <b>target</b>="_blank"
     </p>
 
-    <h1>The Method Attribute</h1>
+    <h1>3. Method Attribute</h1>
     <p>
         The method attribute specifies the HTTP method to be used when submitting the form data.
         <br>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
         <br><br>
         <b>method</b>="get" or <b>method</b>="post"
     </p>
-    <h1>Autocomplete Attribute</h1>
+    <h1>4. Autocomplete Attribute</h1>
     <p>
         The autocomplete attribute specifies whether a form should have autocomplete on or off.
         <br>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
         <br><br>
         <b>autocomplete</b>="on" or "off"
     </p>
-    <h1>Novalidate Attribute</h1>
+    <h1>5. Novalidate Attribute</h1>
     <p>
         The novalidate attribute is a boolean attribute.
         <br>When present, it specifies that the form-data (input) should not be validated when submitted.
         <br><br>
         <b>novalidate</b>
+    </p>
+    <h1>6. Formenctype Attribute</h1>
+    <p>
+        The input formenctype attribute specifies how the form-data should be encoded when submitted (only for forms with method="post").
+        <br>Note: This attribute overrides the enctype attribute of the &ltform> element.
+        <br>The formenctype attribute works with the following input types: submit and image.
+        <br><br>
+        <b>&ltinput type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data"></b>
     </p>
     <h1>List of All &ltform&gt Attributes</h1>
     <h2>Attribute&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description</h2>
@@ -78,7 +86,6 @@
         <br><b>novalidate</b>&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies that the form should not be validated when submitted
         <br><b>rel</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies the relationship between a linked resource and the current document
         <br><b>target</b>&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Specifies where to display the response that is received after submitting the form
-            
     </p>
 </body>
 </html>
