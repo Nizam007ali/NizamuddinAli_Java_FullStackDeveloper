@@ -7,7 +7,7 @@ print("Hello! It's Nizam")
 print("He is called 'Haider'")
 print('He is called "Nitish"')
 
-#Multiline string we can use and tabspace also in it
+#Multiline string
 str = '''   Johny, Johny
     (Yes, papa)
     Eating sugar?
