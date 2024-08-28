@@ -89,8 +89,33 @@
     <h1>select where col data is not equal val</h1>
     <p>select * from table_name where col != val;</p>
     <h1>select where col1 data is > 28 and col2 data is <lt> 5000</h1>
-    <p>select * from dept where col1 > 28 and cpl2 < 5000;</p>
-
+    <p>select * from table_name where col1 > 28 and cpl2 < 5000;</p>
+    <h1>select every data which start from k</h1>
+    <p>select * from table_name where name like 'k%';</p>
+    <h1>select every data which has only 5 characters</h1>
+    <p>select * from table_name where name like '_____';</p>
+    <h1>select every data which end with l</h1>
+    <p>select * from table_name where name like '%l';</p>
+    <h1>select every data which has l</h1>
+    <p>select * from table_name where name like '%l%';</p>
+    <h1>select every data which has second chracter 'o', word can consist minimum two character</h1>
+    <p>select * from table_name where name like '_o%';</p>
+    <h1>select every data which has second chracter 'o', word can consist only two character</h1>
+    <p>select * from table_name where name like '_o';</p>
+    <h1>select every data which has  first chracter 'a', word can consist minimum three character</h1>
+    <p>select * from table_name where name like 'a__%';</p>
+    <h1>select every data which start from k or h</h1>
+    <p>select * from table_name where name like 'k%' or name like 'h%';</p>
+    <h1>select every data which have same character like london</h1>
+    <p>select * from table_name where city like 'l_o__on';</p>
+    <h1>select greater data without using max</h1>
+    <p>select * from table_name order by salary desc limit 1;</p>
+    <h1>select greater data using max</h1>
+    <p>select table_name(col) from dept;</p>
+    <h1>select lower data using min</h1>
+    <p>select table_name(col) from dept;</p>
+    <h1>give average data using avg</h1>
+    <p>select table_name(col) from dept;</p>
         
 
 
