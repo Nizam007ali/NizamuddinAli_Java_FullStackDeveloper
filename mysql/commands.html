@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands in mysql</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 1vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 3vw;
+            color: aqua;
+        }
+        p{
+            font-size: 2.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create database.</h1>
+    <p>create database db_name;</p>
+    <h1>command use to select which database we want to work 
+        (everytime it is used when restart application)</h1>
+    <p>use db_name;</p>
+    <h1>Creating table</h1>
+    <p>create table table_name(v1 d1, v2 d2, v3 d3, .......);</p>
+    <h1>describe table schema</h1>
+    <p>desc table_name;</p>
+    <h1>adding column to table respectively</h1>
+    <p>alter table table_name add(per int, sal int);</p>
+    <h1>delete column (only one at a time)</h1>
+    <p>alter table table_name drop per;
+    <h1>modify column specification like datatype and size</h1>
+    alter table table_name modify name varchar(22);
+    <h1>deleting table</h1>
+    <p>drop table table_name;</p> 
+    <h1>insert value</h1>
+    <p>insert into customer value(val1, val2, val3, val4..........);</p>
+    <h1>inser multiple values</h1>
+    <p>insert into staff (var1, var2, var3) value (val11, va12, val13),(val21, val22, val23),....;</p>
+    <h1>show whole table values</h1>
+    <p>select * from table_name;</p>
+    <h1>show single table values</h1>
+    <p>select col_name from table_name;</p>
+    <h1>show multiple table values</h1>
+    <p>select col1, col2 from table_name;</p>
+    <h1>show specific table values</h1>
+    <p>select col1 from table_name where col2 = val;</p>
+    <h1>update</h1> 
+    <p>update table_name set col2 = newval where col = val;</p>
+    <h1>if this is nott working means you are in safe mode so update and delete not work</h1>
+    <p>set sql_safe_updates = 0;</p>
+    <h1>delete whole data and specific data respectively</h1>
+    <p>delete from table_name;</p>
+    <p>delete from table_name where col = value;</p>
+    <h1>truncate use to delete whole table data</h1>
+    <p>truncate  table_name;</p>
+<pre>
+    <h1>truncate vs delete</h1>
+    <p>
+        ddl                             dml 
+        whole but where not             where can be used
+        no rollback                     rollback
+    </p>
+</pre>
+    <h1>distinct(unique value of col)</h1>
+    <p>select distinct col from table_name;</p>
+    <h1>order by(age in ascending order(no keyword bacause it run by default) and 
+    descending order(to use desecending desc keyword use))</h1>
+    <p>select col from dept order by table_name;</p>
+    <p>select col from dept order by table_name desc;</p>
+    <h1>limit(show only first 4 values no error if there is 3 pnly 3 will show)</h1>
+    <p>select * from table_name limit 4;</p>
+    <h1>limit(show 2 value and left 3 i.e 4 and 5)</h1>
+    <p>select * from table_name limit 2 offset 3;</p>
+    <h1>math</h1>
+    <pre><p>
+    select 17+5;
+    select 17-5;
+    select 17*5;
+    select 17/5;
+    select 17%5;
+    </p></pre>
+    <h1>select where col data is not equal val</h1>
+    <p>select * from table_name where col != val;</p>
+    <h1>select where col1 data is > 28 and col2 data is <lt> 5000</h1>
+    <p>select * from dept where col1 > 28 and cpl2 < 5000;</p>
+
+        
+
+
+</body>
+</html>

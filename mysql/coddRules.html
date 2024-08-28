@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codd rules</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+            text-align: justify;
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+        h1{
+            color: aqua;
+            font-size: 3vw;
+        }
+        p{
+
+        }
+        b{
+            color: aquamarine;
+        }
+        li{
+            padding-top: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Codd rules</h1>
+    E.F. Codd, an English computer scientist, proposed 12 rules (often called Codd's 12 Rules) to define what is required from a database management system (DBMS) to be considered truly relational. Although he proposed these rules in the 1980s, they are still foundational in understanding relational database management systems (RDBMS).
+    <br>Here are the 12 rules:
+    <p>
+    <ol>
+        <li><b>Information Rule: </b>All information (including metadata) is represented logically in tables.
+        </li><li><b>Guaranteed Access Rule: </b>Every piece of data is accessible through a combination of table name, primary key (row), and attribute (column).
+        </li><li><b>Systematic Treatment of NULL Values: </b>NULLs (unknown or missing data) must be uniformly treated as distinct values, independent of data type.
+        </li><li><b>Dynamic Online Catalog Based on the Relational Model: </b>The database metadata should be stored in tables and be accessible using the same query language used to access regular data.
+        </li><li><b>Comprehensive Data Sublanguage Rule:</b> A relational system may support several languages, but there must be at least one language that supports data definition, manipulation, integrity constraints, and transaction management.
+        </li><li><b>View Updating Rule: </b>Any view that is theoretically updatable must be updatable through the system.
+        </li><li><b>High-level Insert, Update, and Delete: </b>The system must support insertions, updates, and deletions at a set level (not just a single row).
+        </li><li><b>Physical Data Independence: </b>Changes to the physical storage of data should not affect how data is accessed by users.
+        </li><li><b>Logical Data Independence: </b>Changes to the logical structure (tables) of the database should not affect the user’s ability to access data.
+        </li><li><b>Integrity Independence: </b>Integrity constraints must be defined separately from application programs and stored in the catalog.
+        </li><li><b>Distribution Independence: </b>The end-user should not be aware of whether the database is distributed across multiple locations.
+        </li><li><b>Non-subversion Rule: </b>If a system provides low-level access to the data, it should not allow it to bypass integrity rules defined at a higher level.
+        </li></ol>
+        These rules were intended to be a guideline for developing fully relational databases, although no database system fully adheres to all of them even today.
+        <br><br>
+        <h1>The breakdown of which Codd's rules are commonly not fully followed by major RDBMSs:</h1>
+
+    <h1>1. Oracle Database:</h1><br>
+    Rule 6 (View Updating Rule): Complex views, particularly those involving joins, aggregations, or derived fields, may not always be directly updatable.
+    <br>Rule 9 (Logical Data Independence): Structural changes in the database (like adding columns or modifying tables) can still impact applications.
+    <br>Rule 11 (Distribution Independence): In distributed systems, Oracle does not fully abstract distribution from the end user.
+    <br><br>
+    <h1>2. Microsoft SQL Server:</h1>
+    Rule 6 (View Updating Rule): Complex views are not always updatable.
+    <br>Rule 9 (Logical Data Independence): Changes to the logical schema (like splitting or merging tables) can affect applications.
+    <br>Rule 11 (Distribution Independence): Distributed databases and sharding are not entirely transparent.
+    <br><br>
+    <h1>3. MySQL:</h1>
+    Rule 6 (View Updating Rule): Complex views often cannot be updated directly.
+    <br>Rule 9 (Logical Data Independence): Applications can still be impacted by schema changes like adding or altering tables.
+    <br>Rule 11 (Distribution Independence): Full distribution transparency is not achieved in MySQL’s distributed setups.
+    <br><br>
+    <h1>4. PostgreSQL:</h1>
+    Rule 6 (View Updating Rule): PostgreSQL supports view updates, but not for highly complex or derived views.
+    <br>Rule 11 (Distribution Independence): PostgreSQL does not completely hide the distributed nature of data across multiple servers.
+    <br><br>
+    <h1>5. IBM Db2:</h1>
+    Rule 6 (View Updating Rule): Db2 struggles with updating views that involve complex logic or aggregations.
+    <br>Rule 9 (Logical Data Independence): Changes in the schema can still require application-level adjustments.
+</p>
+</body>
+</html>
