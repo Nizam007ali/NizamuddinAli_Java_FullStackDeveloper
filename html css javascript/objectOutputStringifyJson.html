@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show object, Stringify, Json</title>
+</head>
+
+<body>
+
+    <script>
+        const Myself = {
+            name: "Nizam",
+            age: 24,
+            city: "Bhopal"
+        };
+
+        document.write(Myself, "<br>");      // show [object Object]
+
+        document.write(Myself.name + " " + Myself.age + " " + Myself.city, "<br>")
+
+        // Build a Txt
+        let txt = "";
+        for (let x in Myself) {
+            txt += Myself[x] + " ";
+        };
+        // Display the Text
+        document.write(txt, "<br>");
+
+        //using object.values
+        const myArray = Object.values(Myself);
+        document.write(myArray, "<br>");
+
+        let text = "";
+        for (let [property, value] of Object.entries(Myself)) {
+            text += property + ": " + value + "<br>";
+        }
+        document.write(text, "<br>");
+
+        //Using JSON.stringify()
+        let I = JSON.stringify(Myself);
+        document.write(I, "<br>");
+        
+    </script>
+</body>
+
+</html>
