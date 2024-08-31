@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object constructor Function</title>
+</head>
+
+<body>
+
+    <script>
+        // declare an object constructor function
+        function My(fname, lname, age, city) {
+            this.fname = fname;
+            this.lname = lname;
+            this.age = age;
+            this.city = city;
+            this.state = "MP";                  //default value
+            this.fullName = function () {       //add function in methods 
+                return this.fname + " " + this.lname;
+            };
+        }
+        const myFather = new My("yakub", "ali", 66, "umaria");
+        const myMother = new My("amna", "khan", 65, "sagar");
+        const mySelf = new My("nizam", "ali", 24, "bhopal");
+
+        str = JSON.stringify(myFather);
+        document.write(str);
+        str = JSON.stringify(myMother);
+        document.write(str);
+        str = JSON.stringify(mySelf);
+        document.write(str, "<br>", "<br>");
+
+        //Adding a Property to an Object
+        myFather.salary = 35000;
+        str = JSON.stringify(myFather);             //salary only added to myfather
+        document.write(str);
+        str = JSON.stringify(mySelf);               //salary not added
+        document.write(str, "<br>", "<br>");
+
+        //Adding a Property to a constructor
+        //My.nationality = "Indian"; give error
+        My.prototype.nationality = "Indian";
+        document.write(myFather.nationality, "<br>");
+        document.write(myMother.nationality, "<br>");
+        str = JSON.stringify(myFather);
+        document.write(str);                        //but not seen in constructor
+        str = JSON.stringify(myMother);
+        document.write(str, "<br>", "<br>");
+
+        //using function methods
+        document.write(myFather.fullName(), "<br>", "<br>");
+
+        //adding method to an object
+        myMother.changeName = function (name) {
+            this.lname = name;
+        }
+        myMother.changeName("ali");
+        str = JSON.stringify(myMother);
+        document.write(str, "<br>", "<br>");
+
+        //Adding a Method to a Constructor
+        //Person.changeName = function (name) {
+        //this.lastName = name;             ??this give error
+        //}
+        My.prototype.changefName = function (name) {
+            this.fname = name;
+        }
+        myMother.changefName("ammi");
+        str = JSON.stringify(myMother);
+        document.write(str);
+
+    </script>
+</body>
+
+</html>
