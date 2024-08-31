@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+    <script>
+        //create an object with properties
+        const student = {
+            firstName:"Nizam", 
+            lastName:"Ali", 
+            age:24,
+            fullName : function() {         // function store as property
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        
+        // Create an Object
+        const student1 = {};
+
+        // Add Properties
+        student1.firstName = "nitish";
+        student1.lastName = "pandey";
+        student1.age = 26;
+
+        // accessing properties(two types)
+        document.write("Name : ",student.firstName," ");        // obj.poperty
+        document.write(student["lastName"],"<br>");             // obj[poperty]        
+        document.write("Full name : ",student.fullName(),"<br>");      // obj.funproperty()  
+
+        // Create a copy
+        const x = student;
+
+        // Change Age in both
+        x.age = 20;    
+        document.write("Student age : ",student.age,"<br>");
+
+        // adding new property
+        student.nationality = "Indian";
+        document.write("Student nationality : ",student.nationality,"<br>");
+
+        // delete property
+        delete student.nationality;
+        document.write("Student nationality(after deleting nationality) : ",student.nationality,"<br>");
+    </script>
+</body>
+</html>
