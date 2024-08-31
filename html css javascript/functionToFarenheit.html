@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celcius to frenheit</title>
+</head>
+<body><form action="">
+    <label for="c">Celsius &emsp; : </label>
+    <input type="text" id="c"><br>
+    <label for="f">Farenheit &nbsp; : </label>
+    <input type="text" id="f">
+    <button onclick="eval()"></button>
+</form>
+
+<script>
+    function eval(){
+        let c = document.getElementById("c").value;
+        function tofar(c) {
+            return (9/5*c)+32;
+        }
+        document.getElementById("f").value = tofar(c);
+    }
+</script>
+</body>
+</html>
