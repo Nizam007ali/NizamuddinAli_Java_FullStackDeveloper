@@ -111,13 +111,18 @@
     <h1>select greater data without using max</h1>
     <p>select * from table_name order by salary desc limit 1;</p>
     <h1>select greater data using max</h1>
-    <p>select table_name max(col) from dept;</p>
+    <p>select max(col) from table_name;</p>
     <h1>select lower data using min</h1>
-    <p>select table_name min(col) from dept;</p>
+    <p>select min(col) from table_name;</p>
     <h1>give average data using avg</h1>
-    <p>select table_name avg(col) from dept;</p>
-        
-
-
+    <p>select avg(col) from table_name;</p>
+    <h1>give count of data using count</h1>
+    <p>select count(col) from table_name;</p>
+    <h1>give sum of data using sum</h1>
+    <p>select sum(col) from table_name;</p>
+    <h1>null keyword</h1>
+    <p>update table_name set col = null where col2 = value;</p>
+    <p>insert into table_name set value (val, val2, null, ....);</p>
+    <p>null set and insert have null value</p>
 </body>
 </html>
