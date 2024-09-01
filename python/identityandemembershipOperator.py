@@ -16,5 +16,3 @@ print(x == y)
 # membership operator
 print("hello" in x)
 print("mango" not in x)
-
-
