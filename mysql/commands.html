@@ -7,16 +7,16 @@
     <style>
         *{
             margin: 0%;
-            padding: 1vw;
+            padding: 0.4vw;
             text-align: justify;
             background-color: black;
         }
         h1{
-            font-size: 3vw;
+            font-size: 2vw;
             color: aqua;
         }
         p{
-            font-size: 2.5vw;
+            font-size: 1.5vw;
             color: white;
         }
     </style>
@@ -36,7 +36,7 @@
     <h1>delete column (only one at a time)</h1>
     <p>alter table table_name drop per;
     <h1>modify column specification like datatype and size</h1>
-    alter table table_name modify name varchar(22);
+    <p>alter table table_name modify name varchar(22);</p>
     <h1>deleting table</h1>
     <p>drop table table_name;</p> 
     <h1>insert value</h1>
@@ -129,5 +129,12 @@
     <p>select * from insurance where region not in('southwest','southeast') and sex = 'male';</p>
     <h1>average bmi who is male smoker</h1>
     <p>select avg(bmi) from insurance where smoker = 'yes' and sex = 'male';</p>
+    <h1>find the region of maximum charges(inner query or sub query).</h1>
+    <p>select region, charges from insurance where charges = (select max(charges) from insurance);</p> 
+    <h1>find the maximum children region wise</h1>
+    <!-- only region can show becuase its only in group by show 4 results  -->
+    <p>select max(children), region from insurance group by region;</p>
+    <!-- now region and smoker show with 8 results  -->
+    <p>select max(children), region, smoker from insurance group by region, smoker;</p>
 </body>
 </html>
