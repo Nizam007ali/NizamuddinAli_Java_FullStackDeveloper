@@ -1,4 +1,4 @@
-package new_oop;
+package gitp;
 
 public class forLabeledLoop {
     public static void main(String args[])  
