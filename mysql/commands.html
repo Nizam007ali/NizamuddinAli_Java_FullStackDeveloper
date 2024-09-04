@@ -154,5 +154,14 @@
     <p>select * from insurance where bmi not between 20 and 50 order by bmi;</p> 
     <h1>shows current date time</h1>
     <p>select now() from dual;</p>
+    <h1>inner join(show common values(n+n column))</h1>
+    <p>select * from orders inner join customer on orders.customerid=customer.customerid;</p>
+    <h1>inner join show two values</h1>
+    <p>select orderid, customername from orders inner join customer on orders.customerid=customer.customerid;</p>
+    <h1>left join show value according to left table</h1>
+    <p>select * from orders left join customer on orders.customerid=customer.customerid;</p>
+    <h1>left join show value according to right table</h1>
+    <p>select * from orders right join customer on orders.customerid=customer.customerid;</p>
+
 </body>
 </html>
