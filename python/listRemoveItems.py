@@ -38,5 +38,4 @@ print()
 print("_____________________________________________________________")
 print("delete list")                                                                # only one item at a time same as above bu not return value
 del student                                                                         # delete 3 value
-# print(student)                                                                      # gives error since del will delete list so no list is there
-print()
+# print(student)           
