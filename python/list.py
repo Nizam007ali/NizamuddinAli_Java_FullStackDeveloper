@@ -9,12 +9,12 @@ print(subject)
 print(numbers)
 print(listboolean)
 print(myval)
-print()
+print("_____________________________________________________________________________")
 
 
 print("show type")
 print(type(myval))
-print()
+print("_____________________________________________________________________________")
 
 
 print("get value by index")
@@ -24,7 +24,7 @@ print(numbers[3:7])                                                     # 3 pos 
 print(numbers[:5])                                                      # first pos to 5 pos not included
 print(numbers[7:])                                                      # 7 pos  included to last pos
 print(numbers[-4:-1])                                                   # -4(7) pos included -1(10) pos not included
-print()
+print("_____________________________________________________________________________")
 
 print("check if list contain value ")
 if "nizam" in myval:
