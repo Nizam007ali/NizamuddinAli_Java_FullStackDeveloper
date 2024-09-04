@@ -136,5 +136,19 @@
     <p>select max(children), region from insurance group by region;</p>
     <!-- now region and smoker show with 8 results  -->
     <p>select max(children), region, smoker from insurance group by region, smoker;</p>
+    <h1>topper from different charge with minimum 5 students</h1>
+    <p>select max(per), branch from student group by branch having count(*)>4;</p>
+    <h1>show max bmi regionwise show region whose sum of children is greater than 380 </h1>
+    <p>select max(bmi), region from insurance group by region having sum(children)>380;</p>
+    <h1>show bmi as body mass index</h1>
+    <p>select bmi as bodyMassIndex from insurance;</p>
+    <h1>show value from 20 to 20.2(inclusive 20, 20.2)</h1>
+    <p>select * from insurance where bmi between 20 and 20.2;</p>
+    <h1>count rows between 20 and 20.2 inclusive</h1>
+    <p>select count(*) from insurance where bmi between 20 and 20.2;</p>
+    <h1>shows bmi not between 20 to 50 i.e 20 50 not include</h1>
+    <p>select * from insurance where bmi not between 20 and 50 order by bmi;</p> 
+    <h1>shows current date time</h1>
+    <p>select now() from dual;</p>
 </body>
 </html>
