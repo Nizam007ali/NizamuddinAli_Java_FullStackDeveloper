@@ -10,11 +10,16 @@
             box-sizing: border-box;
         }
         nav{
+            display: flex;
             border: 2px solid black;
             position: fixed;
             height: 6vw;
             width: 100%;
             background-color: aqua;
+        }
+        img{
+            height: 5.4vw;
+            padding: 0.15vw;
         }
         ul{
             font-size: 3vw;
@@ -42,9 +47,9 @@
     <p id="nav"></p>
     
     <script>
-        let image = '<img src="images/nizamart2.jpg">'
+        let image = '<img src="images/nizamart2.jpg">';
         let tags = ['home','about','services','contactus'];
-        let code = `<nav><ul>`;
+        let code = `<nav>${image}<ul>`;
         for (const x of tags) {
             code += `<li><a href="">${x}</a></li>`;
         }
