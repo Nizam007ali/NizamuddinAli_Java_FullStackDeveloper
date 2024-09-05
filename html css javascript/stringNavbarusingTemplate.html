@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using template strings</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            border: 2px solid black;
+            position: fixed;
+            height: 6vw;
+            width: 100%;
+            background-color: aqua;
+        }
+        ul{
+            font-size: 3vw;
+            display: flex;
+            padding: .5vw;
+        }
+        li{
+            padding: 0.5vw;
+            list-style: none;
+            margin-left: 12.5vw;
+            border-radius: 0.75vw;
+        }
+        li:hover{
+            background-color: blue;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p id="nav"></p>
+    
+    <script>
+        let image = '<img src="images/nizamart2.jpg">'
+        let tags = ['home','about','services','contactus'];
+        let code = `<nav><ul>`;
+        for (const x of tags) {
+            code += `<li><a href="">${x}</a></li>`;
+        }
+        code += `</ul></nav>`;
+        document.getElementById("nav").innerHTML = code;
+    </script>
+</body>
+</html>
