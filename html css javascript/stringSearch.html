@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string search</title>
+</head>
+<body>
+    
+    <script>
+        let str = "I am nizamuddin ali and my nickname is nizam."
+        document.write("str : ",str,"<br><hr>")
+        //show first occurence
+        document.write("str.indexOf('nizam') : ",str.indexOf('nizam'),"<br>")
+        //show last occurence
+        document.write("str.lastIndexOf('nizam') : ",str.lastIndexOf('nizam'),"<br>")
+        // 25  is search position show it will give next occuring aafter the index
+        document.write("str.indexOf('nizam',25) : ",str.indexOf('nizam',25),"<br>")
+        //search is same as indexof but search donot take second argument
+        document.write("str.search(\"am\") : ",str.search("am"),"<br>")
+        document.write("str.match('am') : ",str.match('am'),"<br>")
+        document.write("Array.from(str.matchAll('am')) : ",Array.from(str.matchAll('am')),"<br>")
+        document.write("str.includes('ali') : ",str.includes('ali'),"<br>")
+        document.write("str.includes('ali',20) : ",str.includes('ali',20),"<br>")
+        document.write("str.startsWith('I') : ",str.startsWith('I'),"<br>")
+        document.write("str.startsWith('am') : ",str.startsWith('am'),"<br>")
+        document.write("str.startsWith('am',2) : ",str.startsWith('am',2),"<br>")
+        document.write("str.endsWith('nizam.') : ",str.endsWith('nizam.'),"<br>")
+        document.write("str.endsWith('nizam') : ",str.endsWith('nizam'),"<br>")
+        document.write("str.endsWith('ali',19) : ",str.endsWith('ali',19),"<br>")
+        
+    </script>
+</body>
+</html>
