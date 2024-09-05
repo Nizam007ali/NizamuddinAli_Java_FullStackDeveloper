@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+
+<body>
+
+    <script>
+        let str = "My name is Nizam Ali, I have done MCA from NRI college, BHOPAL.";
+        document.write("str : ", str, "<br><hr>")
+
+        document.write("length method return length<br>")
+        document.write("str.length : ",str.length,"<br><hr>")
+
+        document.write("charat() return character at give position unable to work with -ve position<br>")
+        document.write("str.charAt(11) : ",str.charAt(11),"<br><hr>")
+
+        document.write("charCodeat() return code of character at give position<br>")
+        document.write("str.charCodeAt(11) : ",str.charCodeAt(11),"<br><hr>")
+
+        document.write("at() or at[] return character at given position but it can use -ve index <br>")
+        document.write("str.at(-55) : ",str.at(-55),"<br>")
+        document.write("str.at(30) : ",str.at(30),"<br>")
+        document.write("str[30] : ",str[30],"<br><hr>")
+
+        document.write("Extractig method : 3 types<br>")
+        document.write("slice(start,end)<br>")          //return 
+        document.write("str.slice(11,17) : ",str.slice(11,17),"<br>")
+        document.write("substring(start,end)<br>")
+        document.write("str.substring(17,20) : ",str.substring(17,20),"<br>")
+        document.write("substr(start,length)<br>")
+        document.write("str.substr(34,3) : ",str.substr(34,3),"<br><hr>")
+
+        document.write("trim method<br>")
+        let str1 = " nizam ali , nizam ali ";
+        document.write("str1:", str1, ".")
+        document.write("str1.trim():", str1.trim(), ".")
+        document.write("str1.trimStart():", str1.trimStart(), ".")
+        document.write("str1.trimEnd():", str1.trimEnd(), ".<br><hr>")
+
+        document.write("pad method<br>")
+        document.write("str1.padStart(3,'-') : ", str1.padStart(3,'-'),".")
+        document.write("str1.padEnd(3,\"/\") : ", str1.padEnd(3,"/"), ".<br><hr>")
+        
+        document.write("repeat(count) method, returning function<br>")
+        document.write("str1.repeat(3) : ", str1.repeat(3),".<br><hr>")
+    
+        document.write("replace method,case-sensitive returning function<br>")
+        document.write("str1.replace(\"ali\",\"khan\") : ", str1.replace("ali","khan"),".<br>")
+        document.write("str1.replaceAll(\"ali\",\"khan\") : ", str1.replaceAll("ali","khan"),".<br><hr>")
+    
+        document.write("split method,convert to array returning function<br>")
+        a = str1.split(",")
+        document.write("a = str1.split(","); <br> a : ",a,".<br>")
+        document.write("a[0] : ",a[0],".<br>")
+        document.write("a[1] : ",a[1],".<br>")
+    </script>
+</body>
+
+</html>
