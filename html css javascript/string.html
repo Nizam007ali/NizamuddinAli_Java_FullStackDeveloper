@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        let name = "Nizamuddin Ali";                    // we can use ' or "
+        let name1 = 'Nizamuddin Ali';                   //both are same
+        document.write(name,"<br>");
+        document.write(name1,"<br><hr>");
+
+        document.write("Escape charcters <br>");
+        // \ is used in js for escape character otherwise it will give error
+        let str1 = "my name is \'nizamudddin ali\', I have done\"Mca\" where i get 1800\\2000 marks. ";
+        document.write(str1,"<br><hr>");
+
+        document.write("Template string <br>");
+        // template string doesnot need \ before quote
+        let str = `my name is 'nizamudddin ali',
+         I have done"Mca" where i get 1800\\2000 marks.`;
+        document.write(str,"<br><hr>");
+        
+        document.write("String as object <br>");
+        let y = new String("Nizam");
+        let x = "Nizam";
+        document.write("y as string object : ",y,"<br>");
+        document.write("x as string : ",x,"<br>");
+        document.write("x == y: ",x==y,"<br>");         //RETURN true
+        document.write("x === y: ",x===y,"<br>");       //RETURN false
+    </script>         
+</body>
+</html>
