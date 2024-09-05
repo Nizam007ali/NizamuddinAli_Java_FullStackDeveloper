@@ -162,6 +162,19 @@
     <p>select * from orders left join customer on orders.customerid=customer.customerid;</p>
     <h1>left join show value according to right table</h1>
     <p>select * from orders right join customer on orders.customerid=customer.customerid;</p>
+    <h1>cross join</h1>
+    <p>select * from customer cross join orders;</p>
+    <p>select * from customer,orders;</p>
+    <h1>self join</h1>
+    <p>create table customer100(c_id int, c_name varchar(20), city varchar(10));</p>
+    <p>insert into customer100(c_id, c_name, city) values
+        (101, 'arun', 'Bhopal'),
+        (102, 'varun', 'Indore'),
+        (103, 'harun', 'Bhopal'),
+        (104, 'amit', 'Gwalior'),
+        (105, 'sumit', 'Indore'),
+        (106, 'ankit','Bhopal');</p>
+    <p>select distinct A.c_name, A.city from customer100 A,customer100 B where A.city = B.city and A.c_id<>B.c_id order by A.city;</p>
 
 </body>
 </html>
