@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Javascript Events</title>
+    <style>
+        *{
+            margin: 0%;
+            background-color: black;
+            padding: 1vw;
+        }
+        h1{
+            font-size: 3vw;
+            color: aqua;
+        }
+        P{
+            color: blue;
+        }
+        button{
+            font-size: 2.5vw;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            margin: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>onclick show on p tag</h1>
+    <p id="date"></p>
+    <button onclick="document.getElementById('date').innerHTML=Date()">Date()</button>
+    <br><br><br><hr><br>
+
+    <h1>onmousseover and this keyword show in button</h1>
+    <button onmouseover="this.innerHTML=Date()">Date()</button>
+    <br><br><br><hr><br>
+
+    <h1>onkeydown show on p tag</h1>
+    <p id="date1"></p>
+    <button onkeydown="displayDate()">Date()</button>
+
+    <script>
+        function displayDate() {
+            document.getElementById("date1").innerHTML = Date();
+        }
+    </script>
+
+</body>
+
+</html>
