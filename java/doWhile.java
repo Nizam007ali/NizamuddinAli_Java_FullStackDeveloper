@@ -8,7 +8,7 @@ public class doWhile {
             i++;
         }while(i<=10);
         
-        do{         //thid shows whwther condition is true or false it will ru once at a time
+        do{         //this shows whether condition is true or false it will run once at a time
             System.out.println(i);
             i++;
         }while(i<=10);
