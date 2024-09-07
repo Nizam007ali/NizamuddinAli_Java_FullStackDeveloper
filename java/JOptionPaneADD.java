@@ -1,7 +1,7 @@
 package git;
 import javax.swing.JOptionPane;
 
-public class jOptionPaneAdd {
+public class JOptionPaneADD {
 
     public static void main(String str[]) {
         int a = 0, b, d;
