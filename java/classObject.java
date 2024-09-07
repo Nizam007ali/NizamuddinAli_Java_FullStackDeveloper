@@ -1,15 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package git;
-
 import java.util.Scanner;
-
-/**
- *
- * @author nizam
- */
 
 class student{
     int id;
@@ -43,7 +33,7 @@ public class classObject {
         name = s.next();
         
         student s1 = new student();             // Creating s1 object of student class 
-        s1.inputData(id, name);             // initialization through method
+        s1.inputData(id, name);                 // initialization through method
         s1.course = "Mca";                      // initialization through reference
         s1.showData();
         
