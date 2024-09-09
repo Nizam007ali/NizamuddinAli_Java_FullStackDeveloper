@@ -10,6 +10,9 @@ int fact(int n){
 
 int main()
 {
-	cout<<fact(7);
+	int n;
+	cout<<"Enter value of n to get its factorial : ";
+	cin>>n;
+	cout<<"Factorial of "<<n<<" is "<<fact(n);
 }
 
