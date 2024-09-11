@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constraints in mysql</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Constraints</h2><hr><br>
+    <h1>not null</h1><br>
+    <p>
+        create table Persons(ID int not null, LName varchar(25) not null, Age int);<br>
+        desc Persons;<br>
+        insert into persons values( 1, 'amit', null);<br>
+        select * from persons;<br>
+        insert into persons values( 2, null, 15);<br>
+        alter table persons modify age int not null;<br>
+    </p><br><hr><br>
+    <h1>unique</h1><br>
+    <p>
+        create table persons2(Id int not null, lname varchar(25), fname varchar(25), age int, constraint uc_persons2 unique(Id, lname)); -- unique(id) unique(lname) unique can also be given with columnname int unique,<br>
+        desc persons2;<br>
+        insert into persons2 values(1,'amit','a',50);<br>
+        insert into persons2 values(2,'puja','a',50);<br>
+        insert into persons2 values(3,'puja','p',50);<br>
+        insert into persons2 values(3,'puja','a',50);<br>
+    </p><br><hr><br>
+    <h1>primary key</h1><br>
+    <p><br>
+        create table p3(Id int, Age int, primary key(Id));<br>
+        insert into p3 values(20,30);<br>
+        insert into p3 values(21,null);<br>
+        insert into p3 values(21,50);<br>
+        insert into p3 values(null,40);<br>
+        alter table p3 drop primary key;<br>
+    </p><br><hr><br>
+</body>
+</html>
