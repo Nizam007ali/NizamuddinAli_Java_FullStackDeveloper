@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDL commands</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>DDL commands</h2><hr><br>
+    <h1>Create database;</h1><br>
+    <p>
+        create database student;
+    </p><br><hr><br>
+    <h1>we must use database before start working</h1>
+    <p>use student;</p><br><hr><br>
+    <h1>Creating table</h1>
+    <p>create table Class11(id int, name varchar(20), DOB date,... , .......);</p><br><hr><br>
+    <h1>describe table schema</h1>
+    <p>desc class11;</p><br><hr><br>
+    <h1>adding column to table respectively</h1>
+    <p>alter table table_name add(per int, sal int);</p><br><hr><br>
+    <h1>delete column (only one at a time)</h1>
+    <p>alter table table_name drop per;</p><br><hr><br>
+    <h1>modify column specification like datatype and size</h1>
+    <p>alter table table_name modify name varchar(22);</p><br><hr><br>
+    <h1>Rename column</h1>
+    <p>ALTER TABLE table_name RENAME COLUMN oldcolumn_name to newcolumn_name;</p><br><hr><br>
+    <h1>Rename table</h1>
+    <p>RENAME TABLE COLUMN oldtable_name to newtable_name;</p><br><hr><br>
+    <h1>deleting table</h1>
+    <p>drop table table_name;</p><br><hr><br>
+</body>
+</html>
