@@ -54,5 +54,20 @@
         insert into p3 values(null,40);<br>
         alter table p3 drop primary key;<br>
     </p><br><hr><br>
+    <h1>check constraint</h1><br>
+    <p><br>
+        create table person23(id int not null, age int, check(age>=18));<br>
+        select * from person23;<br>
+        insert into person23 values(101,23);<br>
+        insert into person23 values(102,16);<br>
+    </p><br><hr><br> 
+    <h1>default constraint</h1><br>
+    <p><br>
+        create table person24(id int not null, age int, city varchar(20) default('bhopal'));<br>
+        insert into person24 values(101,22,null);<br>
+        select * from person24;<br>
+        insert into person24 values(101,22,default);<br>
+        insert into person24(id, age) values(102,24);<br>
+    </p><br><hr><br> 
 </body>
 </html>
