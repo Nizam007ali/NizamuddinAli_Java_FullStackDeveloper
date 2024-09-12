@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNL Command</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>DML commands</h2><hr><br>
+    <h1>insert value</h1>
+    <p>insert into customer value(val1, val2, val3, val4..........);</p><br><hr><br>
+    <h1>inser multiple values</h1>
+    <p>insert into staff (var1, var2, var3) value (val11, va12, val13),(val21, val22, val23),....;</p><br><hr><br>
+    <h1>show whole table values</h1>
+    <p>select * from table_name;</p><br><hr><br>
+    <h1>show single table values</h1>
+    <p>select col_name from table_name;</p><br><hr><br>
+    <h1>show multiple table values</h1>
+    <p>select col1, col2 from table_name;</p><br><hr><br>
+    <h1>show specific table values</h1>
+    <p>select col1 from table_name where col2 = val;</p><br><hr><br>
+    <h1>update</h1> 
+    <p>update table_name set col2 = newval where col = val;</p><br><hr><br>
+    <h1>if update and delete not working means you are in safe mode so off the sql_safe_updates</h1>
+    <p>set sql_safe_updates = 0;</p><br><hr><br>
+    <h1>delete whole data and specific data respectively</h1>
+    <p>delete from table_name;<br>
+    delete from table_name where col = value;</p><br><hr><br>
+</body>
+</html>
