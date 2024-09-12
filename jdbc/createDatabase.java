@@ -21,6 +21,7 @@ public class createDatabase {
         r = stmt.executeUpdate("drop database git");
         if (r == 0)
             System.out.println("Database deleted.");
+            
         else
             System.out.println("Database not deleted.");
 
