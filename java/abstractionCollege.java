@@ -9,6 +9,7 @@ abstract class Rgpv {
     public void examCopyCheck() {
         System.out.println("This is RGPV Copy CHeck method");
     }
+    
 }
 
 class abstractionCollege extends Rgpv {
