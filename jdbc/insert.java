@@ -24,6 +24,8 @@ public class insert {
             if(r>0) System.out.println("row "+(i+2)+" inserted ");
             else System.out.println("row "+(i+2)+" not inserted "); 
         }
+
+        conn.close();
         
     }
 }
