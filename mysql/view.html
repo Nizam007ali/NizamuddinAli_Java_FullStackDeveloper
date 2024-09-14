@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>View</h2><hr><br>
+    <p>
+        create view v1_insurance as select age, sex from insurance where smoker='no';<br>
+        select * from v1_insurance;<br>
+        insert into v1_insurance values( 1600, 'female');<br>
+        select * from insurance where age = 1600;<br>
+        create view v2 as select age, sex from insurance;<br>
+        select * from v2 where age = 1600;<br>
+        drop view v1_insurance;<br>
+        create or replace view v1_insurance as select age,sex,children from insurance where smoker='yes';<br>
+        select * from v1_insurance where children = 200;<br>
+        set sql_safe_updates = 0;<br>
+        update v1_insurance set children = 100;<br>
+        insert into  v1_insurance values ( 25,male,200);<br>
+        select * from insurance;<br>
+        delete from v1_insurance;<br>
+        select * from v1_insurance;<br>
+        select * from insurance;<br>
+        create or replace view v1_insurance as select age,sex,children from insurance where smoker='yes';<br>
+        select * from insurance;<br>
+    </p><br><hr><br>
+</body>
+</html>
