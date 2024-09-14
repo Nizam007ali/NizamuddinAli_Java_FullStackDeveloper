@@ -15,7 +15,8 @@ public class bufferedReader {
             s = s+ "\n" + r;
         }
         System.out.println(s);
-        
+        br.close();
+
     }
     
 }
