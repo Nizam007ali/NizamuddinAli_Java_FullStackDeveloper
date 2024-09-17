@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <br><h1>index</h1>
+    <p>
+        create index e1 on insurance1(age); <br>
+        explain select age, sex, children from insurance1 where age < 30 and age > 20; <br>
+        show indexes from insurance1; <br>
+        explain select age, sex, children from insurance1 where age < 22 and age > 20; <br>
+        show indexes from insurance1; <br>
+        drop index e1 on insurance1;
+    </p><br><hr><br>
+    
+    <h1>autoincrement</h1>
+    <p>
+        CREATE TABLE Persons1 (id int NOT NULL AUTO_INCREMENT, LN varchar(10) NOT NULL, FN varchar(10), Age int, PRIMARY KEY (id)); <br>
+        insert into persons1( fn, ln, age) values('arun', 'singh', 24),('varun', 'singh', 25),('karuna', 'singh', 21),('tarun', 'singh', 22); <br>
+        select * from persons1; <br>
+        alter table persons1 drop auto_increment; <br>
+        Alter table persons1 modify id int; <br>
+        insert into persons1( id, fn, ln, age) values(7,'harun', 'ali', 23); <br>
+        select * from persons1;
+    </p><br><hr><br>
+</body>
+</html>
