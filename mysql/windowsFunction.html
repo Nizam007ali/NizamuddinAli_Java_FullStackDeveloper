@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <br><h2>Windows function....</h2>
+    <br><h1>over()</h1>
+    <p>
+        select * from employees; <br>
+        select email,  max(salary) from employees;      // gives error(aggregatted function without group by) <br>
+        select email,job_id, max(salary) from employees group by job_id;        // also gives error <br>
+        select job_id, max(salary) from employees group by job_id; <br>
+        select email, job_id, sum(salary) over() from employees; <br>
+        select email, job_id, sum(salary) over() as sum_salary from employees; <br>
+        select email, job_id, sum(salary) over() as sum_salary from employees group by job_id;      // group by not work with over() <br>
+        select email, job_id, max(salary) over(partition by job_id) as sum_salary from employees;       // so we use partition by <br>
+        select bmi, max(charges) over(partition by region order by charges) from insurance1;
+    </p><br><hr><br>
+    <p>
+        create table stuent1(student_number int, student_name varchar(30), subject varchar(20), marks int);
+        insert into stuent1 values(1,'tom','cs',90);
+        insert into stuent1 values(2,'sofia','cs',80);
+        insert into stuent1 values(3,'john','cs',80);
+        insert into stuent1 values(4,'rob','cs',70);
+        set sql_safe_updates = 0;
+        delete from stuent1;
+    </p><br><hr><br>
+    <h1>row_number()</h1>
+    <p>select *, row_number() over() from stuent1;</p><br><hr><br>
+    <h1>rank()</h1>
+    <p>select *, rank() over(order by marks) from stuent1;</p><br><hr><br>
+    <h1>dense_rank()</h1>
+    <p>select *, dense_rank() over(order by marks) from stuent1;</p><br><hr><br>
+</body>
+</html>
