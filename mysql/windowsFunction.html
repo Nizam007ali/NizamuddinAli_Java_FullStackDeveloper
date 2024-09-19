@@ -40,12 +40,12 @@
         select bmi, max(charges) over(partition by region order by charges) from insurance1;
     </p><br><hr><br>
     <p>
-        create table stuent1(student_number int, student_name varchar(30), subject varchar(20), marks int);
-        insert into stuent1 values(1,'tom','cs',90);
-        insert into stuent1 values(2,'sofia','cs',80);
-        insert into stuent1 values(3,'john','cs',80);
-        insert into stuent1 values(4,'rob','cs',70);
-        set sql_safe_updates = 0;
+        create table stuent1(student_number int, student_name varchar(30), subject varchar(20), marks int);<br>
+        insert into stuent1 values(1,'tom','cs',90);<br>
+        insert into stuent1 values(2,'sofia','cs',80);<br>
+        insert into stuent1 values(3,'john','cs',80);<br>
+        insert into stuent1 values(4,'rob','cs',70);<br>
+        set sql_safe_updates = 0;<br>
         delete from stuent1;
     </p><br><hr><br>
     <h1>row_number()</h1>
@@ -54,5 +54,21 @@
     <p>select *, rank() over(order by marks) from stuent1;</p><br><hr><br>
     <h1>dense_rank()</h1>
     <p>select *, dense_rank() over(order by marks) from stuent1;</p><br><hr><br>
+    <p>
+        create table cy100(id int, sub varchar(10), marks int);<br>
+        insert into cy100 values (1,'cs',90),(2,'ec',70),(3,'cs',60),(4,'cs',80),(5,'ec',75),(6,'ec',85);<br>
+    </p><br><hr><br>
+    <h1>first value, last value, nth value, lead, lag</h1>
+    <p>
+        select *, first_value(marks) over(partition by sub order by sub) from cy100;<br>
+        select *, last_value(marks) over(partition by sub  order by sub) from cy100;<br>
+        select *, first_value(marks) over(partition by sub order by marks) from cy100;<br>
+        select *, last_value(marks) over(partition by sub  order by marks) from cy100;<br>
+        select *, nth_value(marks,2) over(partition by sub order by sub) from cy100;<br>
+        select *, lead(marks) over(partition by sub  order by sub) from cy100;<br>
+        select *, lead(marks,2) over(partition by sub  order by sub) from cy100;<br>
+        select *, lag(marks) over(partition by sub  order by sub) from cy100;<br>
+        select *, lag(marks,2) over(partition by sub  order by sub) from cy100;
+    </p><br><hr><br>
 </body>
 </html>
