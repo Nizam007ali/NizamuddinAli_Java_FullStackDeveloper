@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+        h1{
+            font-size: 2vw;
+            color: aqua;
+        }
+        h2{
+            font-size: 2.5vw;
+            color: aqua;
+        }
+        p{
+            font-size: 1.5vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <br><h2>trigger:-</h2>
+    <br><p>
+        create table emp2( 
+	        name varchar(20) not null, 
+            working_date date, 
+            working_hours int
+        );<br>
+        insert into emp2 values ('Robin','2020-10-04',12),
+        ('Warner','2020-10-04',10),
+        ('Peter','2020-10-04',13),
+        ('Marco','2020-10-04',14),
+        ('Brayden','2020-10-04',12),
+        ('Antonio','2020-10-04',11);
+    </p><br><hr><br>
+    <h1>insert trigger</h1>
+    <p>
+        delimiter / <br>
+        create trigger t1
+        before insert on emp2 for each row
+        begin
+        if new.working_hours < 0 then set new.working_hours = 100;
+        end if;
+        end / <br>
+        delimiter ;<br><br>
+        insert into emp2 values('amit','2020-10-04', 50);<br>
+        select * from emp2;<br>
+        insert into emp2 values('gaurav', '2020-10-04', -10);<br>
+        select * from emp2;<br><br>
+        delimiter / <br>
+        create trigger t2
+        before insert on emp2 for each row
+        begin if 
+        new.working_hours > 100 then set new.working_hours = 0;
+        end if;<br>
+        end / <br>
+        delimiter ; <br>
+        insert into emp2 values('nizam', '2020-10-04', 110); <br>
+        select * from emp2;<br><br>
+        delimiter / <br>
+        create trigger t3
+        before insert on emp2 for each row
+        begin if 
+        new.working_hours < 10 then set new.working_hours = 5;
+        end if; <br>
+        end / <br>
+        delimiter ; <br>
+        insert into emp2 values('rashid', '2020-10-04', -20); -- if condition collide then it will go with recent one
+        select * from emp2;<br>
+    </p><br><hr><br>
+</body>
+</html>
