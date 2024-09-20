@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0%;
             padding: 0.4vw;
             text-align: justify;
             background-color: black;
         }
-        h1{
+
+        h1 {
             font-size: 2vw;
             color: aqua;
         }
-        h2{
+
+        h2 {
             font-size: 2.5vw;
             color: aqua;
         }
-        p{
+
+        p {
             font-size: 1.5vw;
             color: white;
         }
     </style>
 </head>
+
 <body>
-    <br><h2>trigger:-</h2>
-    <br><p>
-        create table emp2( 
-	        name varchar(20) not null, 
-            working_date date, 
-            working_hours int
+    <br>
+    <h2>trigger:-</h2>
+    <br>
+    <p>
+        create table emp2(
+        name varchar(20) not null,
+        working_date date,
+        working_hours int
         );<br>
         insert into emp2 values ('Robin','2020-10-04',12),
         ('Warner','2020-10-04',10),
@@ -39,41 +46,70 @@
         ('Marco','2020-10-04',14),
         ('Brayden','2020-10-04',12),
         ('Antonio','2020-10-04',11);
-    </p><br><hr><br>
+    </p><br>
+    <hr><br>
     <h1>insert trigger</h1>
     <p>
         delimiter / <br>
         create trigger t1
         before insert on emp2 for each row
         begin
-        if new.working_hours < 0 then set new.working_hours = 100;
-        end if;
-        end / <br>
-        delimiter ;<br><br>
-        insert into emp2 values('amit','2020-10-04', 50);<br>
-        select * from emp2;<br>
-        insert into emp2 values('gaurav', '2020-10-04', -10);<br>
-        select * from emp2;<br><br>
-        delimiter / <br>
-        create trigger t2
-        before insert on emp2 for each row
-        begin if 
-        new.working_hours > 100 then set new.working_hours = 0;
-        end if;<br>
-        end / <br>
-        delimiter ; <br>
-        insert into emp2 values('nizam', '2020-10-04', 110); <br>
-        select * from emp2;<br><br>
-        delimiter / <br>
-        create trigger t3
-        before insert on emp2 for each row
-        begin if 
-        new.working_hours < 10 then set new.working_hours = 5;
-        end if; <br>
-        end / <br>
-        delimiter ; <br>
-        insert into emp2 values('rashid', '2020-10-04', -20); -- if condition collide then it will go with recent one <br>
-        select * from emp2;<br>
-    </p><br><hr><br>
+        if new.working_hours < 0 then set new.working_hours=100; end if; end / <br>
+            delimiter ;<br><br>
+            insert into emp2 values('amit','2020-10-04', 50);<br>
+            select * from emp2;<br>
+            insert into emp2 values('gaurav', '2020-10-04', -10);<br>
+            select * from emp2;<br><br>
+            delimiter / <br>
+            create trigger t2
+            before insert on emp2 for each row
+            begin if
+            new.working_hours > 100 then set new.working_hours = 0;
+            end if;<br>
+            end / <br>
+            delimiter ; <br>
+            insert into emp2 values('nizam', '2020-10-04', 110); <br>
+            select * from emp2;<br><br>
+            delimiter / <br>
+            create trigger t3
+            before insert on emp2 for each row
+            begin if
+            new.working_hours < 10 then set new.working_hours=5; end if; <br>
+                end / <br>
+                delimiter ; <br>
+                insert into emp2 values('rashid', '2020-10-04', -20); -- if condition collide then it will go with
+                recent one <br>
+                select * from emp2;<br>
+    </p><br>
+    <hr><br>
+    <h1>update trigger</h1>
+    <p>
+    create table sales1 ( id int, product varchar(20), quantity int);<br>
+    insert into sales1 values
+    ( 2020, '2003 maruti suzuki', 110),
+    ( 2021, '2015 avenger', 120),
+    ( 2022, '2018 honda shine', 150),
+    ( 2023, '2014 apache', 150);<br>
+    select * from sales1;<br>
+    delimiter /<br>
+    create trigger before_update_salesinfo
+    before update
+    on sales1 for each row
+    begin
+    declare error_msg varchar(255);
+    set error_msg = ('the new quantity can not be greater than 2 times current quantity');
+    if new.quantity = old.quantity*2 then
+    signal sqlstate '45000'
+    set message_text = error_msg;
+    end if;<br>
+    end/<br>
+    select * from sales1;<br>
+    set sql_safe_updates = 0;<br>
+    drop trigger mysql1.before_update_salesinfo;<br>
+    update sales1 set quantity = 150 where id = 2020;<br>
+    update sales1 set quantity = 300 where id = 2020;<br>
+    </p><br>
+    <hr><br>
 </body>
+
 </html>
