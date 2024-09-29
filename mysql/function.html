@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    * {
+            margin: 0%;
+            padding: 0.4vw;
+            text-align: justify;
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 2vw;
+            color: aqua;
+        }
+
+        p {
+            font-size: 1.5vw;
+            color: white;
+        }
+</style>
+<body>
+    <h1>function</h1><br>
+<p>
+    delimiter / <br>
+create procedure sp() <br>
+begin  <br>
+select * from dept; <br>
+end / <br>
+delimiter ; <br>
+call sp(); <br><br>
+
+delimiter / <br>
+create procedure sp1() <br>
+begin  <br>
+insert into dept value(8, 'nizam', 25, 'umaria', 50101); <br>
+end / <br>
+delimiter ; <br>
+call sp1(); <br><br>
+
+delimiter / <br>
+create procedure sp2(id int) <br>
+begin  <br>
+insert into dept value(id, 'nizam', 25, 'umaria', 50101); <br>
+end / <br>
+delimiter ; <br>
+call sp2(100); <br> <br>
+
+</p>
+</body>
+</html>
