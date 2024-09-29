@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><style>
+    <title>Document</title>
+    <style>
         * {
             margin: 0%;
             padding: 0.4vw;
@@ -26,101 +28,184 @@
             color: white;
         }
 
+        table,
+        td,
         th {
             border: 2px solid white;
-            color: red;
+            border-collapse: collapse;
+            padding: 0.5vw;
         }
-        
-        td {
-            border: 2px solid white;
-        }
+
         th p {
             color: red;
         }
-        td:first-child p{
+
+        td:first-child p {
             color: blueviolet;
+            text-align: center;
+        }
+
+        th:first-child p {
+            background: linear-gradient(to right, #ff0000 30%, #ffffff, #cf23cf, #000000);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
     <br>
     <h2>CTE(Common Table Expression):-</h2>
     <br>
-    <table>
+    <table class="t1">
         <tr>
-            <th><p>Pattern</p></th>
-            <th><p>What the Pattern matches</p></th>
-        </tr>
-        <tr>
-            <td><p>*</p></td>
-            <td><p>Zero or more instances of string preceding it</p></td>
-        </tr>
-    	<tr>
-            <td><p>+</p></td>
-            <td><p>One or more instances of strings preceding it</p></td>
-        </tr>
-    	<tr>
-            <td><p>.</p></td>
-            <td><p>Any single character</p></td>
+            <th>
+                <p>Pattern</p>
+            </th>
+            <th>
+                <p>What the Pattern matches</p>
+            </th>
         </tr>
         <tr>
-            <td><p>?</p></td>
-            <td><p>Match zero or one instances of the strings preceding it.</p></td>
+            <td>
+                <p>*</p>
+            </td>
+            <td>
+                <p>Zero or more instances of string preceding it</p>
+            </td>
         </tr>
         <tr>
-            <td><p>^</p></td>
-            <td><p>caret(^) matches Beginning of string</p></td>
+            <td>
+                <p>+</p>
+            </td>
+            <td>
+                <p>One or more instances of strings preceding it</p>
+            </td>
         </tr>
         <tr>
-            <td><p>$</p></td>
-            <td><p>End of string</p></td>
+            <td>
+                <p>.</p>
+            </td>
+            <td>
+                <p>Any single character</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[abc]</p></td>
-            <td><p>Any character listed between the square brackets</p></td>
+            <td>
+                <p>?</p>
+            </td>
+            <td>
+                <p>Match zero or one instances of the strings preceding it.</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[^abc]</p></td>
-            <td><p>Any character not listed between the square brackets</p></td>
+            <td>
+                <p>^</p>
+            </td>
+            <td>
+                <p>caret(^) matches Beginning of string</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[A-Z]</p></td>
-            <td><p>match any upper case letter.</p></td>
+            <td>
+                <p>$</p>
+            </td>
+            <td>
+                <p>End of string</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[a-z]</p></td>
-            <td><p>match any lower case letter</p></td>
+            <td>
+                <p>[abc]</p>
+            </td>
+            <td>
+                <p>Any character listed between the square brackets</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[0-9]</p></td>
-            <td><p>match any digit from 0 through to 9.</p></td>
+            <td>
+                <p>[^abc]</p>
+            </td>
+            <td>
+                <p>Any character not listed between the square brackets</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[[:<:]]</p></td>
-            <td><p>matches the beginning of words.</p></td>
+            <td>
+                <p>[A-Z]</p>
+            </td>
+            <td>
+                <p>match any upper case letter.</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[[:>:]]</p></td>
-            <td><p>matches the end of words.</p></td>
+            <td>
+                <p>[a-z]</p>
+            </td>
+            <td>
+                <p>match any lower case letter</p>
+            </td>
         </tr>
         <tr>
-            <td><p>[:class:]</p></td>
-            <td><p>matches a character class i.e. [:alpha:] to match letters, [:space:] to match white space, [:punct:] is match punctuations and [:upper:] for upper class letters.</p></td>
+            <td>
+                <p>[0-9]</p>
+            </td>
+            <td>
+                <p>match any digit from 0 through to 9.</p>
+            </td>
         </tr>
         <tr>
-            <td><p>p1|p2|p3</p></td>
-            <td><p>Alternation; matches any of the patterns p1, p2, or p3</p></td>
+            <td>
+                <p>[[:<:]]< /p>
+            </td>
+            <td>
+                <p>matches the beginning of words.</p>
+            </td>
         </tr>
         <tr>
-            <td><p>{n}</p></td>
-            <td><p>n instances of preceding element</p></td>
+            <td>
+                <p>[[:>:]]</p>
+            </td>
+            <td>
+                <p>matches the end of words.</p>
+            </td>
         </tr>
         <tr>
-            <td><p>{m,n}</p></td>
-            <td><p>m through n instances of preceding element</p></td>
+            <td>
+                <p>[:class:]</p>
+            </td>
+            <td>
+                <p>matches a character class i.e. [:alpha:] to match letters, [:space:] to match white space, [:punct:]
+                    is match punctuations and [:upper:] for upper class letters.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>p1|p2|p3</p>
+            </td>
+            <td>
+                <p>Alternation; matches any of the patterns p1, p2, or p3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>{n}</p>
+            </td>
+            <td>
+                <p>n instances of preceding element</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>{m,n}</p>
+            </td>
+            <td>
+                <p>m through n instances of preceding element</p>
+            </td>
         </tr>
     </table>
-    
+
 </body>
+
 </html>
