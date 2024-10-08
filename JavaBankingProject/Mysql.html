@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySql</title>
+</head>
+
+<body>
+    <h1>Run these command in Mysql</h1>
+    <p style="padding: 0px 50px;">
+        create database banking;<br>
+        use banking;<br>
+        create table account_tbl( Account_Number Varchar(10) Primary Key, Customer_Name Varchar(20), Balance float);<br>
+        create table transfer_tbl( TransactionId Varchar(10), Account_Number Varchar(10), <br>
+        Benefeciary_acc_no varchar(10), Transaction_date date, Transaction_amount int, <br>
+        foreign Key (Account_Number) REFERENCES account_tbl(Account_Number), primary key
+        auto_increment(TransactionId));<br>
+        select * from account_tbl;<br>
+        select * from transfer_tbl;<br>
+        insert into account_tbl values ( 1234567890, 'Reddy', 800000), ( 1234567891, 'Mahesh', 0);<br>
+    </p>
+</body>
+
+</html>
