@@ -1,0 +1,84 @@
+.sub {
+    margin: 5vw 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+    position: absolute;
+    height: 98vh;
+    color: rgb(255, 255, 255);
+}
+.subdh1 {
+    margin-top: 3vh;
+    font-size: 16px;
+    letter-spacing: -1px;
+    width: 100%;
+}
+#sr1, #sr2, #sr3 {
+    accent-color: rgb(21, 21, 21);
+}
+.subpar{
+    width: 82%;
+    line-height: 15px;
+    margin: 1.5vw 9%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    border: 1px solid rgb(250, 250, 250);
+}
+.subch {
+    border: 1px solid rgb(250, 250, 250);
+    padding: 1.2vw 5px;
+}
+.subh2{
+    color: gold;
+    font-size: 24px;
+}
+.subh2p{
+    color: white;
+    font-size: 14px;
+}
+.subp {
+    font-size: 14px;
+}
+.subh3 {
+    font-size: 15px;
+    width: 10%;
+    margin: 20px 45%;
+    border-bottom: 2px dotted gold;
+}
+.sh3l{
+    text-decoration: none;
+    color: white;
+}
+.subpay {
+    width: 32%;
+    height: 8vh;
+    border-radius: 1vh;
+    background-color: white;
+    color: black;
+    margin: 1vh 34%;
+}
+.sph2 {
+    padding: 1.6vh;
+}
+.sph2l {
+    text-decoration: none;
+    color: black;
+}
+.subli {
+    width: 60%;
+    margin: 25px 39%;
+    display: flex;
+}
+li:first-child {
+    list-style: none;
+}
+.sublil {
+    margin-left: -10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.sublil:hover {
+    border-bottom: 18px solid white;
+}

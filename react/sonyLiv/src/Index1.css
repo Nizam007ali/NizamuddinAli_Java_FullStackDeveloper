@@ -1,0 +1,86 @@
+
+.index{
+    background-color: rgb(21, 21, 21);
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+.ian{
+    height: 44.4vw;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.iani{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide-animation 30s infinite;
+}
+.ia1 .ia2 .ia3 .ia4 {
+    width: 100%;
+}
+
+.ia1{
+    height: 100%;
+    background-color: indianred;
+}
+.ia2{
+    height: 100%;
+    background-color: rebeccapurple;
+}
+.ia3{
+    height: 100%;
+    background-color: yellowgreen;
+}
+.ia4{
+    height: 100%;
+    background-color: teal;
+}
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    99% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.ian:hover .iani {
+    animation-play-state: paused;
+}
+img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}

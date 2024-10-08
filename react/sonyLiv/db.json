@@ -1,0 +1,26 @@
+{
+  "user": [
+    {
+      "id": "5e4f",
+      "name": "nizamuddin ali",
+      "email": "nizam@gmail.com",
+      "phone": "09131897793",
+      "password": "1234",
+      "image": ""
+    },
+    {
+      "id": "bfd9",
+      "name": "haidar",
+      "email": "Haidar007ali@gmail.com",
+      "phone": "7771814417",
+      "password": "1234"
+    },
+    {
+      "id": "4fc5",
+      "name": "nizam",
+      "email": "nizam007@gmail.com",
+      "phone": "913189",
+      "password": "1234"
+    }
+  ]
+}

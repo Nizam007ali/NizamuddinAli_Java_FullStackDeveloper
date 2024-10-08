@@ -1,0 +1,25 @@
+.signup {
+    background-color: rgb(21, 21, 21);
+    width: 99.6%;
+    margin: 7.9vh -5px;
+    height: 90.1vh;
+    color: white;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+}
+.s2 {
+    width: 30%;
+    height: 60vh;
+    margin: 10vh 35%;
+}
+.s2inp {
+    margin-top: 3vh;
+    width: 98%;
+    padding: 10px 0px;
+}
+.s2but {
+    margin-top: 5vh;
+    width: 100%;
+    font-size: 24px;
+}
