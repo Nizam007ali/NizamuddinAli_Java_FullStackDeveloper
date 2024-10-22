@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style >
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .b, .n {
+            text-align: center;
+            width: 100%;
+        }
+        .b1 {
+            margin: 5vw 42%;
+            font-size: 4vw;
+            padding: 1vw;
+            width: 16%;
+        }
+        .n1 {
+            font-size: 5vw;
+            padding: 2.5vw;
+        }
+    </Style>
+    <script>
+        count = 0;
+        function fun1() {
+
+        localStorage.setItem("fn","Nizamuddin");
+        localStorage.setItem("ln","Ali");
+        document.getElementById("n1").innerHTML = localStorage.getItem("fn") + localStorage.getItem("ln");
+
+        count++;
+        localStorage.setItem("c",count);
+        document.getElementById("c1").innerHTML = localStorage.getItem("c");
+
+        }
+    </script>
+</head>
+<body>
+    <div class="n"><p class="n1" id="n1"></p></div>
+    <div class="b"><button class="b1" onclick="fun1()">Click</button></div>
+    <div class="n"><p class="n1" id="c1"></p></div>
+</body>
+</html>
