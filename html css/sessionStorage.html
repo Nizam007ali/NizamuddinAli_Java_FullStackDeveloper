@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .p {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+    }
+
+    .c {
+        width: 100%;
+        text-align: center;
+    }
+
+    .h {
+        font-size: 5vw;
+        padding: 2vw;
+    }
+
+    .b1 {
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    .c1 {
+        margin: 3vw 2%;
+        width: 96%;
+        height: 20vw;
+    }
+
+    .h11 {
+        color: red;
+    }
+
+    .h12 {
+        color: green;
+    }
+
+    .h13 {
+        color: blue;
+    }
+
+    .p1 {
+        margin-top: 1vw;
+        font-size: 3vw;
+        width: 100%;
+    }
+</style>
+<script>
+    rcount = 0;
+    gcount = 0;
+    bcount = 0;
+    acount = 100;
+    function fun1() {
+        rcount++;
+        if (rcount == 256) {
+            rcount = 0;
+        }
+        sessionStorage.setItem("red", rcount);
+        document.getElementById("p11").innerHTML = sessionStorage.getItem("red");
+        return rcount;
+    }
+    function fun2() {
+        gcount++;
+        if (gcount == 256) {
+            gcount = 0;
+        }
+        sessionStorage.setItem("gre", gcount);
+        document.getElementById("p12").innerHTML = sessionStorage.getItem("gre");
+        return gcount;
+    }
+    function fun3() {
+        bcount++;
+        if (bcount == 256) {
+            bcount = 0;
+        }
+        sessionStorage.setItem("blu", bcount);
+        document.getElementById("p13").innerHTML = sessionStorage.getItem("blu");
+        return bcount;
+    }
+    function fun4() {
+        acount = acount + 1;
+        if (acount == 101) {
+            acount = 0;
+        }
+        sessionStorage.setItem("alp", acount);
+        document.getElementById("p14").innerHTML = sessionStorage.getItem("alp");
+        return acount;
+    }
+    function reset() {
+        rcount = 0;
+        bcount = 0;
+        gcount = 0;
+        acount = 100;
+        sessionStorage.setItem("red", rcount);
+        document.getElementById("p11").innerHTML = sessionStorage.getItem("red");
+        sessionStorage.setItem("gre", gcount);
+        document.getElementById("p12").innerHTML = sessionStorage.getItem("gre");
+        sessionStorage.setItem("blu", bcount);
+        document.getElementById("p13").innerHTML = sessionStorage.getItem("blu");
+        sessionStorage.setItem("alp", acount);
+        document.getElementById("p14").innerHTML = sessionStorage.getItem("alp");
+    }
+    function fun() {
+        rcount--;
+        gcount--;
+        bcount--;
+        acount--;
+        a1 = fun4()/100;
+        document.getElementById("c1").style.backgroundColor = "rgba("+fun1()+","+fun2()+","+fun3()+","+a1+")"; 
+    }
+</script>
+
+<body>
+    <div class="p">
+        <div class="c">
+            <h1 class="h h11">Red</h1><button onclick="fun1(); fun();" class="b1">Click</button>
+            <p class="p1" id="p11">red</p>
+        </div>
+        <div class="c">
+            <h1 class="h h12">Green</h1><button onclick="fun2(); fun();" class="b1">Click</button>
+            <p class="p1" id="p12">green</p>
+        </div>
+        <div class="c">
+            <h1 class="h h13">Blue</h1><button onclick="fun3(); fun();" class="b1">Click</button>
+            <p class="p1" id="p13">blue</p>
+        </div>
+        <div class="c">
+            <h1 class="h">alpha</h1><button onclick="fun4(); fun();" class="b1">Click</button>
+            <p class="p1" id="p14">alpha</p>
+        </div>
+        <div class="c">
+            <h1 class="h">Reset</h1><button onclick="reset(); fun();" class="b1">Click</button>
+        </div>
+    </div>
+    <div class="c1" id="c1">Text</div>
+</body>
+
+</html>
