@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p>Login timer : <output id="result"></output></p>
+    <button onclick="starttimer()">Login</button>
+    <p>Logout after 2 minute</p>
+    <h1 id="h"></h1>
+
+    <script>
+        var w;
+        function show() {
+            if(localStorage.getItem("name")==undefined) {
+                document.getElementById("h").innerHTML = "Please Login";
+            } else {
+                document.getElementById("h").innerHTML = "Hello "+localStorage.getItem("name");
+            }
+        }
+        setInterval("show()",1000);
+        function starttimer() {
+            localStorage.setItem("name","nizam");
+            if (typeof (Worker) !== "undefined") {
+                if (typeof (w) == "undefined") {
+                    w = new Worker("webworker.js");
+                }
+                w.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                    if (event.data == 120) {
+                        stoptimer();
+                    }
+                };
+            } else {
+                document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+            }
+        }
+        function stoptimer() {
+            localStorage.removeItem("name");
+            document.getElementById("result").innerHTML = 0;
+            w.terminate();
+            w = undefined;
+        }
+    </script>
+</body>
+
+</html>
