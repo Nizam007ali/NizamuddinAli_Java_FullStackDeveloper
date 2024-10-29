@@ -4,6 +4,8 @@
  */
 package arraytask50questions;
 
+import java.util.Scanner;
+
 /**
  *
  * @author nizam
@@ -33,7 +35,7 @@ public class ArrayEvenOddSeparate {
     }
 
     public int[] oddArray(int[] arr) {
-        int arr1[] = new int[arr.length-evenNoInArray(arr)];
+        int arr1[] = new int[arr.length - evenNoInArray(arr)];
         int j = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 1) {
@@ -46,7 +48,14 @@ public class ArrayEvenOddSeparate {
 
     public static void main(String[] args) {
 
-        int arr[] = {1, 3, 2, 5, 4, 7, 8};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of elements : ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter " + (i + 1) + " element : ");
+            arr[i] = sc.nextInt();
+        }
         System.out.print("arr");
         for (int i = 0; i < arr.length; i++) {
             System.out.print("-->" + arr[i]);
@@ -56,13 +65,13 @@ public class ArrayEvenOddSeparate {
         int arr1[] = a.evenArray(arr);
         System.out.print("Even arr");
         for (int i = 0; i < arr1.length; i++) {
-            System.out.print("-->"+arr1[i]);
+            System.out.print("-->" + arr1[i]);
         }
         System.out.println();
         int arr2[] = a.oddArray(arr);
         System.out.print("Odd arr");
         for (int i = 0; i < arr2.length; i++) {
-            System.out.print("-->"+arr2[i]);
+            System.out.print("-->" + arr2[i]);
         }
         System.out.println();
 
