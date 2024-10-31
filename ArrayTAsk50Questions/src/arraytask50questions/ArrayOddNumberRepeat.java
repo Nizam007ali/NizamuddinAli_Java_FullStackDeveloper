@@ -4,6 +4,8 @@
  */
 package arraytask50questions;
 
+import java.util.Scanner;
+
 /**
  *
  * @author nizam
@@ -11,9 +13,12 @@ package arraytask50questions;
 public class ArrayOddNumberRepeat {
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5, 6, 1, 4, 5, 7, 5, 8};
-        int arr1[] = arr;
         Array a = new Array();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of element in array : ");
+        int n = sc.nextInt();
+        int arr[] = a.getIntArray(n);
+        int arr1[] = arr;
         a.showIntArray(arr1);
         for (int i = 0; i < arr1.length; i++) {
             if (arr1[i] != -1) {

@@ -32,6 +32,25 @@ public class Array {
         }
     }
 
+    public String[] getStrArray(int n) {
+        String arr[] = new String[n];
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter elment of array:-");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter " + (i + 1) + " element :");
+            arr[i] = s.nextLine();
+        }
+        System.out.println("---------------------------------------------------");
+        return arr;
+    }
+    
+    public void showStrArray(String arr[]) {
+        System.out.println("Elements of array:-");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println((i + 1) + " element :"+arr[i]);
+        }
+    }
+
     public static void main(String[] args) {
         Array a = new Array();
         int arr[] = a.getIntArray(3);
