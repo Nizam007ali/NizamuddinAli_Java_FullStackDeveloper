@@ -18,6 +18,10 @@ public class QueueDemo {
         return front == -1 && rear == -1;
     }
 
+    public boolean isfull() {
+        return rear == q.length - 1;
+    }
+
     public void enqueue(int data) {
         if (isfull()) {
             System.out.println("Overflow Condition");
@@ -35,15 +39,11 @@ public class QueueDemo {
         }
     }
 
-    public boolean isfull() {
-        return rear == q.length - 1;
-    }
-
     public int dequeue() {
         int r = 0;
         if (isEmpty()) {
             System.out.println("Queue is empty");
-            return 0;
+            return r;
         } else {
             if (front == rear) {
                 r = q[front];
