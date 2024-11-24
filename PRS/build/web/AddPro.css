@@ -1,0 +1,114 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Nov 2024, 12:13:41 pm
+    Author     : nizam
+*/
+
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    text-decoration: none;
+    font-size: 2vw;
+    list-style: none;
+    font-family: sans-serif;
+    color: white;
+}
+
+.navbar {
+    height: 5vw;
+    color: white;
+    background-color: aqua;
+}
+ul {
+    margin-left: 5%;
+    width: 95%;
+    display: flex;
+}
+a {
+    background-color: blue;
+    padding: 0.5vw 2%;
+    border-radius: 0.5vw;
+}
+select {
+    background-color: blue;
+    padding: 0.5vw 2%;
+    border: none;
+    border-radius: 0.5vw;
+    width: 57.5%;
+}
+img {
+    position: absolute;
+    margin: -0.3vw -49.5%;
+    height: 4vw;
+    width: 4vw;
+}
+.cval {
+    font-size: 0.8vw;
+    background-color: red;
+    padding: 0.1vw;
+    position: absolute;
+    width: 1%;
+}
+
+.box{
+    background-color: blue;
+    width: 96%;
+    padding: 2vw;
+    height: 35vw;
+}
+.f {
+    border: aqua 2px solid;
+    width: 40%;
+    margin-left: 30%;
+}
+.box input{
+    margin: 1vw 0;
+    width: 80%;
+    text-align: left;
+    font-size: 1.2vw;
+    padding: 0.2vw;
+}
+.box .sub{
+    text-align: center;
+    width: 12%;
+    background-color: aqua;
+}
+input{
+    color: black;
+}
+.a {
+    margin-top: 1vw;
+    color: aqua;
+}
+.a1 {
+    margin: 1vw 0;
+    font-size: 1vw;
+    color: white;
+}
+.a1 a {
+    font-size: 1vw;
+    color: aqua;
+}
+textarea {
+    color: black;
+    font-size: 1vw;
+    height: 4vw;
+    width: 80%;
+    text-align: left;
+}
+.text {
+    font-size: 1.4vw;
+}
+select,option {
+    padding: 1vw;
+    font-size: 1.2vw;
+}

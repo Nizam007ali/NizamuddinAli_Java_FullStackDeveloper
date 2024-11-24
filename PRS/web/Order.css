@@ -1,0 +1,149 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Nov 2024, 12:14:46 pm
+    Author     : nizam
+*/
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-size: 2vw;
+    list-style: none;
+    font-family: sans-serif;
+    color: white;
+    align-content: space-between;
+    height: auto;
+}
+
+.navbar {
+    height: 5vw;
+    color: white;
+    background-color: aqua;
+}
+
+ul {
+    margin: 1.3vw;
+    width: 95%;
+    display: flex;
+}
+
+a {
+    background-color: blue;
+    padding: 0.5vw 2%;
+    border-radius: 0.5vw;
+}
+
+select {
+    background-color: blue;
+    margin: -1vw 5%;
+    padding: 0.5vw 2%;
+    border: none;
+    border-radius: 0.5vw;
+    width: 57.5%;
+}
+
+.i1 {
+    position: absolute;
+    margin: 0.5vw;
+    height: 4vw;
+    width: 4vw;
+}
+
+.cval {
+    font-size: 0.8vw;
+    background-color: red;
+    padding: 0.1vw;
+    position: absolute;
+    width: 1%;
+}
+
+.cval1 {
+    font-size: 0.8vw;
+    background-color: red;
+    padding: 0.5vw;
+    position: absolute;
+    width: 1%;
+}
+
+.box {
+    background-color: blue;
+    width: 95.9%;
+    padding: 2vw;
+    height: auto;
+}
+
+.par {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 12% 24% 24% 10% 10% 10% 10%;
+}
+.par1 {
+    display: grid;
+    background-color: blue;
+    width: 100%;
+    grid-template-columns: 12% 24% 24% 10% 10% 10% 10%;
+}
+.ch {
+    align-content: center;
+    font-size: 1vw;
+    padding: 0.5vw 0;
+}
+.ch4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 2px solid black; 
+    font-size: 3vw;
+}
+.ch5 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    border: 2px solid black; 
+    font-size: 3vw;
+}
+.ch6 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    border: 2px solid black; 
+    font-size: 3vw;
+}
+.ch1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-size: 1.4vw;
+}
+.ch2 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    font-size: 1.4vw;
+}
+.a2{
+    font-size: 1vw;
+    background-color: white;
+    color: blue;
+}
+.a1{
+    font-size: 2vw;
+    background-color: white;
+    padding: 0.5vw;
+    color: blue;
+}
+.a4{
+    font-size: 2vw;
+    background-color: white;
+    padding: 0.5vw;
+    color: blue;
+}
+.i {
+    width: 90%;
+    height: 7vw;
+}
+input {
+    font-size: 1vw;
+}

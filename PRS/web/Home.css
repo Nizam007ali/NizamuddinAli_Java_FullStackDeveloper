@@ -1,0 +1,130 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Nov 2024, 12:14:46 pm
+    Author     : nizam
+*/
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-size: 2vw;
+    list-style: none;
+    font-family: sans-serif;
+    color: white;
+    align-content: space-between;
+    height: auto;
+}
+
+.navbar {
+    height: 5vw;
+    color: white;
+    background-color: blue;
+}
+
+ul {
+    margin: 1.3vw 5%;
+    width: 90%;
+    display: flex;
+}
+
+a {
+    background-color: white;
+    padding: 0.5vw 2%;
+    color: black;
+    border-radius: 0.5vw;
+}
+
+.i1 {
+    position: absolute;
+    margin: 0.5vw;
+    height: 4vw;
+    width: 4vw;
+}
+.i1 img {
+    border-radius: 50%;
+}
+
+.cval {
+    font-size: 0.8vw;
+    background-color: red;
+    padding: 0.1vw;
+    position: absolute;
+    width: 1%;
+}
+.p20 {
+    display: none;
+    background-color: blue;
+    width: 8%;
+    /* padding: 0.5vw 2%; */
+    margin: -0.8vw 12.6%;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+.b10 {
+    background-color: blue;
+}
+.p30 {
+    display: inline;
+    background-color: blue;
+    margin: 0vw 1%;
+}
+
+.box {
+    background-color: white;
+    width: 95.9%;
+    padding: 2vw;
+    height: auto;
+}
+
+.par {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 12% 20% 48% 12% 8%;
+}
+.ch {
+    align-content: center;
+    font-size: 1vw;
+    color: black;
+    padding: 0.5vw 0;
+}
+.ch10 {
+    text-align : justify;
+}
+.ch:hover {
+    border: 1px solid black;
+    font-size: 1.5vw;
+}
+.ch1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-size: 1.4vw;
+}
+.ch2 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    font-size: 1.4vw;
+}
+.ch a{
+    font-size: 1vw;
+    background-color: blue;
+    padding: 0.5vw;
+    color: white;
+}
+.i {
+    width: 90%;
+    height: 7vw;
+}
+.i:hover {
+    width: 110%;
+    height: 8.5vw;
+}
+input {
+    font-size: 1vw;
+}
