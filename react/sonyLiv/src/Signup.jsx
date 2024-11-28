@@ -1,47 +1,66 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Signup.css'
+import {toast,ToastContainer} from 'react-toastify'
 
 function Signup() {
 
   const usenavigate = useNavigate();
 
-  const [name, updatename] = useState("");
-  const [email, updateemail] = useState("");
-  const [phone, updatephone] = useState("");
-  const [password, updatepassword] = useState("");
-  const [cpassword, updatecpassword] = useState("");
-  let data = localStorage.getItem("key")
+  const [name,updatename] = useState("");
+  const [email,updateemail] = useState("");
+  const [phone,updatephone] = useState("");
+  const [password,updatepassword] = useState("");
+  const [cpassword,updatecpassword] = useState("");
 
-  const add_user_data = (e) => {
+  const [data,updatedata]=useState(null);
+
+  useEffect(()=>{
+    fetch("http://localhost:8000/user").then((res)=>{
+      return res.json();
+    }).then((resp)=>{
+      updatedata(resp);
+    }).catch((error)=>{
+      alert("data not found")
+    })
+  },[])
+
+  localStorage.setItem("key",JSON.stringify(data));
+
+
+  // console.log(data)
+  const add_user_data=(e)=>{
 
     e.preventDefault();
+    if(password==cpassword){
+    const user_data={name,email,phone,password};
 
-    if (password == cpassword) {
-      const user_data = { name, email, phone, password };
-      let users = JSON.parse(data)
-
-      const user = users.find(
-        (res) => res.phone === user_data.phone || res.email === user_data.email
-      )
-
-      if (user) {
-        alert("already exist");
+    var isData;
+    data.map((item)=>{
+      if(user_data.email==item.email || user_data.phone==item.phone){
+        isData='true';
+      while(true) {
+          break;
       }
-      else {
-        fetch("http://localhost:8000/user", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify(user_data)
-        }).then((res) => {
-          alert("added successfully");
-          usenavigate("/Signin");
-        }).catch((err) => {
-          alert("not added")
-        })
       }
-    } else {
-      alert("Both password must be same");
+    })
+    if(isData=='true'){
+      toast.error("already exist");
+      usenavigate("/signin");
+    }
+    else{
+    fetch("http://localhost:8000/user",{
+      method:"POST",
+      headers:{"content-type":"application/json"},
+      body:JSON.stringify(user_data)
+    }).then((res)=>{
+      toast.success("added successfully");
+      usenavigate("/signin");
+    }).catch((err)=>{
+      toast.error("not added")
+    })
+  }} else {
+    toast.info("Both password must be same");
     }
   }
 

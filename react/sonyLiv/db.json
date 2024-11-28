@@ -4,9 +4,9 @@
       "id": "5e4f",
       "name": "nizamuddin ali",
       "email": "nizam@gmail.com",
-      "phone": "09131897793",
+      "phone": "9131897793",
       "password": "1234",
-      "image": ""
+      "image": "/profile/9131897793.png"
     },
     {
       "id": "bfd9",
@@ -20,6 +20,13 @@
       "name": "nizam",
       "email": "nizam007@gmail.com",
       "phone": "913189",
+      "password": "1234"
+    },
+    {
+      "id": "4c44",
+      "name": "nizamuddin ali",
+      "email": "nizam007ali@gmail.com",
+      "phone": "09131897793",
       "password": "1234"
     }
   ]

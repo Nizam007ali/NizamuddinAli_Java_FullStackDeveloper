@@ -1,0 +1,41 @@
+.about{
+    position: absolute;
+    margin: 6vw 0;
+    width: 100%;
+    color: white;
+}
+.profile{
+    border: 1px solid;
+    display: grid;
+    width: 80%;
+    margin: 1vw 10%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(4,2.5vw) 20vw;
+}
+.v1{
+    font-size: 2vw;
+    border: 1px solid white;
+    height: 100%;
+}
+.ah1{
+    border: 1px solid white;
+}
+.ah1 h1{
+    font-size: 2vw;
+}
+.v1 img{
+    padding: 1vw;
+    height: 18vw;
+    width: 18vw;
+}
+.ah1a{
+    border:none;
+}
+.probut {
+    font-size: 1.6vw;
+    padding: 0.2vw;
+}
+.v1a {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}

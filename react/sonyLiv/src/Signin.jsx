@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import {toast,ToastContainer} from 'react-toastify'
 import './signin.css'
 
 function Signin() {
@@ -39,10 +40,10 @@ function Signin() {
         localStorage.setItem("key1", signindata.phone);
         navigate('/Profile');
       } else {
-        alert("invalid phone or password");
+        toast.error("invalid phone or password");
       }
     } else {
-      alert("no user data found");
+      toast.info("no user data found");
     }
 
   }
