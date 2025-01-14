@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 8px yellow;
+        }
+        h1:hover {
+            text-shadow: 0 0 8px blue;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var toggle = true;
+        function fun() {
+            if(toggle)
+                document.getElementById('h').style.textShadow='0 0 8px blue'
+            else
+                document.getElementById('h').style.textShadow='0 0 8px yellow'
+            toggle=!toggle;
+        }
+        setInterval(fun,500)
+    </script>
+    <h1 id="h">Hello Nizam.</h1>
+    <h2>Welcome</h2>
+</body>
+</html>
