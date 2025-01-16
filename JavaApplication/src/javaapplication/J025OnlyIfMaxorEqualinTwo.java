@@ -12,7 +12,6 @@ import java.util.Scanner;
  */
 public class J025OnlyIfMaxorEqualinTwo {
     public static void main(String[] args) {
-        String res = "";
         Scanner sc = new Scanner(System.in);
         System.out.println("Max or Equal in Two numbers.");
         System.out.print("Enter First number : ");
@@ -34,7 +33,6 @@ public class J025OnlyIfMaxorEqualinTwo {
             System.out.println("Third if executed");
             System.out.println("Both numbers are equals");
         }
-        System.out.println(res);
         System.out.println("==================================================");
     }
 }
