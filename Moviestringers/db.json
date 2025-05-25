@@ -1,0 +1,1112 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "name": "Dunki",
+            "franchise": "N/A",
+            "path": "C:/Movies/Bollywood/Dunki",
+            "poster": "https://example.com/posters/dunki.jpg",
+            "actors": [
+                "Shah Rukh Khan",
+                "Taapsee Pannu",
+                "Vicky Kaushal"
+            ],
+            "director": "Rajkumar Hirani",
+            "releaseDate": "2023-12-22",
+            "genre": [
+                "Comedy",
+                "Drama"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.5,
+                "RottenTomatoes": 86
+            },
+            "userRating": 9.0,
+            "likes": 20400
+        },
+        {
+            "id": 2,
+            "name": "Golmaal: Fun Unlimited",
+            "franchise": "Golmaal",
+            "path": "C:/Movies/Bollywood/Golmaal1",
+            "poster": "https://example.com/posters/golmaal1.jpg",
+            "actors": [
+                "Ajay Devgn",
+                "Arshad Warsi",
+                "Sharman Joshi",
+                "Tusshar Kapoor"
+            ],
+            "director": "Rohit Shetty",
+            "releaseDate": "2006-07-14",
+            "genre": [
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 7.4,
+                "RottenTomatoes": 80
+            },
+            "userRating": 8.2,
+            "likes": 18000
+        },
+        {
+            "id": 3,
+            "name": "Golmaal Returns",
+            "franchise": "Golmaal",
+            "path": "C:/Movies/Bollywood/Golmaal2",
+            "poster": "https://example.com/posters/golmaal2.jpg",
+            "actors": [
+                "Ajay Devgn",
+                "Arshad Warsi",
+                "Tusshar Kapoor",
+                "Kareena Kapoor"
+            ],
+            "director": "Rohit Shetty",
+            "releaseDate": "2008-10-29",
+            "genre": [
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 5.1,
+                "RottenTomatoes": 60
+            },
+            "userRating": 6.5,
+            "likes": 12000
+        },
+        {
+            "id": 4,
+            "name": "Golmaal 3",
+            "franchise": "Golmaal",
+            "path": "C:/Movies/Bollywood/Golmaal3",
+            "poster": "https://example.com/posters/golmaal3.jpg",
+            "actors": [
+                "Ajay Devgn",
+                "Arshad Warsi",
+                "Tusshar Kapoor",
+                "Kareena Kapoor"
+            ],
+            "director": "Rohit Shetty",
+            "releaseDate": "2010-11-05",
+            "genre": [
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 5.6,
+                "RottenTomatoes": 65
+            },
+            "userRating": 7.0,
+            "likes": 13500
+        },
+        {
+            "id": 5,
+            "name": "Golmaal Again",
+            "franchise": "Golmaal",
+            "path": "C:/Movies/Bollywood/Golmaal4",
+            "poster": "https://example.com/posters/golmaal4.jpg",
+            "actors": [
+                "Ajay Devgn",
+                "Arshad Warsi",
+                "Tusshar Kapoor",
+                "Parineeti Chopra"
+            ],
+            "director": "Rohit Shetty",
+            "releaseDate": "2017-10-20",
+            "genre": [
+                "Comedy",
+                "Horror"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 5.0,
+                "RottenTomatoes": 63
+            },
+            "userRating": 7.3,
+            "likes": 15000
+        }
+    ],
+    "series": [
+        {
+            "id": 1,
+            "name": "Gullak",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 1 - Ghar Ki Murgi",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S1/E1",
+            "poster": "https://example.com/posters/gullak_s1e1.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2019-06-15",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.0
+            },
+            "userRating": 9.2,
+            "likes": 28000,
+            "isFavorite": true,
+            "watchCount": 4,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Pure nostalgia!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-04-05"
+        },
+        {
+            "id": 2,
+            "name": "Gullak",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 2 - Chaalu Battery",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S1/E2",
+            "poster": "https://example.com/posters/gullak_s1e2.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2019-06-16",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.1
+            },
+            "userRating": 9.3,
+            "likes": 28500,
+            "isFavorite": true,
+            "watchCount": 3,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Relatable family drama!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-03-22"
+        },
+        {
+            "id": 3,
+            "name": "Gullak",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 3 - Itwaar",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S1/E3",
+            "poster": "https://example.com/posters/gullak_s1e3.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2019-06-17",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.2
+            },
+            "userRating": 9.4,
+            "likes": 29000,
+            "isFavorite": true,
+            "watchCount": 5,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Perfect lazy Sunday vibes!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-10"
+        },
+        {
+            "id": 4,
+            "name": "Gullak",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 4 - Kiraaye Ka Ghar",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S1/E4",
+            "poster": "https://example.com/posters/gullak_s1e4.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2019-06-18",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.3
+            },
+            "userRating": 9.5,
+            "likes": 29500,
+            "isFavorite": true,
+            "watchCount": 6,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Family struggles hit deep!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-28"
+        },
+        {
+            "id": 5,
+            "name": "Gullak",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 5 - Saparivaar",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S1/E5",
+            "poster": "https://example.com/posters/gullak_s1e5.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2019-06-19",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.4
+            },
+            "userRating": 9.6,
+            "likes": 30000,
+            "isFavorite": true,
+            "watchCount": 7,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Finale hits right in the emotions!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-20"
+        },
+        {
+            "id": 6,
+            "name": "Gullak",
+            "seasonName": "Season 2",
+            "episodeName": "Episode 1 - Bijlee Ka Bill",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S2/E1",
+            "poster": "https://example.com/posters/gullak_s2e1.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2021-01-15",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.9
+            },
+            "userRating": 9.1,
+            "likes": 31000,
+            "isFavorite": true,
+            "watchCount": 4,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Hilarious take on household struggles!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-04-05"
+        },
+        {
+            "id": 7,
+            "name": "Gullak",
+            "seasonName": "Season 2",
+            "episodeName": "Episode 2 - Cheeni Kam, Paani Zyaada",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S2/E2",
+            "poster": "https://example.com/posters/gullak_s2e2.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2021-01-15",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.1
+            },
+            "userRating": 9.3,
+            "likes": 32000,
+            "isFavorite": true,
+            "watchCount": 5,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Family dynamics at its best!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-22"
+        },
+        {
+            "id": 8,
+            "name": "Gullak",
+            "seasonName": "Season 2",
+            "episodeName": "Episode 3 - Saparivaar",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S2/E3",
+            "poster": "https://example.com/posters/gullak_s2e3.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2021-01-15",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.2
+            },
+            "userRating": 9.4,
+            "likes": 33000,
+            "isFavorite": true,
+            "watchCount": 6,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Wedding chaos and family fun!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-10"
+        },
+        {
+            "id": 9,
+            "name": "Gullak",
+            "seasonName": "Season 2",
+            "episodeName": "Episode 4 - Kal Board Ka Paper Hai",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S2/E4",
+            "poster": "https://example.com/posters/gullak_s2e4.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2021-01-15",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.0
+            },
+            "userRating": 9.2,
+            "likes": 34000,
+            "isFavorite": true,
+            "watchCount": 7,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Board exams vs cricket—classic dilemma!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-28"
+        },
+        {
+            "id": 10,
+            "name": "Gullak",
+            "seasonName": "Season 2",
+            "episodeName": "Episode 5 - Kiraana",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S2/E5",
+            "poster": "https://example.com/posters/gullak_s2e5.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2021-01-15",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.6
+            },
+            "userRating": 9.7,
+            "likes": 35000,
+            "isFavorite": true,
+            "watchCount": 8,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "A perfect season finale!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-20"
+        },
+        {
+            "id": 11,
+            "name": "Gullak",
+            "seasonName": "Season 3",
+            "episodeName": "Episode 1 - Mission Admission",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S3/E1",
+            "poster": "https://example.com/posters/gullak_s3e1.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2022-04-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.9
+            },
+            "userRating": 9.1,
+            "likes": 31000,
+            "isFavorite": true,
+            "watchCount": 4,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Aman's college dreams take center stage!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-04-05"
+        },
+        {
+            "id": 12,
+            "name": "Gullak",
+            "seasonName": "Season 3",
+            "episodeName": "Episode 2 - LTA",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S3/E2",
+            "poster": "https://example.com/posters/gullak_s3e2.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2022-04-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.7
+            },
+            "userRating": 9.0,
+            "likes": 32000,
+            "isFavorite": true,
+            "watchCount": 5,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Santosh Mishra's travel plans go hilariously wrong!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-22"
+        },
+        {
+            "id": 13,
+            "name": "Gullak",
+            "seasonName": "Season 3",
+            "episodeName": "Episode 3 - Agua",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S3/E3",
+            "poster": "https://example.com/posters/gullak_s3e3.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2022-04-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.2
+            },
+            "userRating": 9.4,
+            "likes": 33000,
+            "isFavorite": true,
+            "watchCount": 6,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Santosh Mishra's matchmaking skills put to the test!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-10"
+        },
+        {
+            "id": 14,
+            "name": "Gullak",
+            "seasonName": "Season 3",
+            "episodeName": "Episode 4 - Satyanarayan Varta Katha",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S3/E4",
+            "poster": "https://example.com/posters/gullak_s3e4.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2022-04-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.8
+            },
+            "userRating": 9.2,
+            "likes": 34000,
+            "isFavorite": true,
+            "watchCount": 7,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "A family's faith and fears collide!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-28"
+        },
+        {
+            "id": 15,
+            "name": "Gullak",
+            "seasonName": "Season 3",
+            "episodeName": "Episode 5 - Izzat Ki Chamkaar",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S3/E5",
+            "poster": "https://example.com/posters/gullak_s3e5.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2022-04-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.6
+            },
+            "userRating": 9.7,
+            "likes": 35000,
+            "isFavorite": true,
+            "watchCount": 8,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "A powerful season finale with deep realizations!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-20"
+        },
+        {
+            "id": 16,
+            "name": "Gullak",
+            "seasonName": "Season 4",
+            "episodeName": "Episode 1 - Kaaran Batau",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S4/E1",
+            "poster": "https://example.com/posters/gullak_s4e1.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2024-06-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.5
+            },
+            "userRating": 8.8,
+            "likes": 31000,
+            "isFavorite": true,
+            "watchCount": 4,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Annu faces tough challenges at work!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-04-05"
+        },
+        {
+            "id": 17,
+            "name": "Gullak",
+            "seasonName": "Season 4",
+            "episodeName": "Episode 2 - Chinaiti",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S4/E2",
+            "poster": "https://example.com/posters/gullak_s4e2.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2024-06-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.5
+            },
+            "userRating": 8.9,
+            "likes": 32000,
+            "isFavorite": true,
+            "watchCount": 5,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Shanti Mishra faces a shocking incident!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-22"
+        },
+        {
+            "id": 18,
+            "name": "Gullak",
+            "seasonName": "Season 4",
+            "episodeName": "Episode 3 - Ghar Ka Kabaad",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S4/E3",
+            "poster": "https://example.com/posters/gullak_s4e3.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2024-06-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.6
+            },
+            "userRating": 9.0,
+            "likes": 33000,
+            "isFavorite": true,
+            "watchCount": 6,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Decluttering turns into family chaos!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-03-10"
+        },
+        {
+            "id": 19,
+            "name": "Gullak",
+            "seasonName": "Season 4",
+            "episodeName": "Episode 4 - Teesra Pahiya",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S4/E4",
+            "poster": "https://example.com/posters/gullak_s4e4.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2024-06-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 8.8
+            },
+            "userRating": 9.2,
+            "likes": 34000,
+            "isFavorite": true,
+            "watchCount": 7,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Aman's antics lead to unexpected drama!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-28"
+        },
+        {
+            "id": 20,
+            "name": "Gullak",
+            "seasonName": "Season 4",
+            "episodeName": "Episode 5 - Pita, Putra aur Prempatra",
+            "franchise": "Gullak Series",
+            "path": "C:/Series/Gullak/S4/E5",
+            "poster": "https://example.com/posters/gullak_s4e5.jpg",
+            "actors": [
+                "Jameel Khan",
+                "Geetanjali Kulkarni",
+                "Vaibhav Raj Gupta",
+                "Harsh Mayar"
+            ],
+            "director": "Palash Vaswani",
+            "releaseDate": "2024-06-07",
+            "genre": [
+                "Drama",
+                "Comedy"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 9.3
+            },
+            "userRating": 9.5,
+            "likes": 35000,
+            "isFavorite": true,
+            "watchCount": 8,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "A powerful season finale with deep realizations!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-02-20"
+        },
+        {
+            "id": 21,
+            "name": "Gram Chikitsalaya",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 1 - Aaya Ram, Gaya Ram",
+            "franchise": "N/A",
+            "path": "C:/Series/GramChikitsalaya/S1/E1",
+            "poster": "https://example.com/posters/gramchikitsalaya_s1e1.jpg",
+            "actors": [
+                "Amol Parashar",
+                "Vinay Pathak",
+                "Anandeshwar Dwivedi"
+            ],
+            "director": "Rahul Pandey",
+            "releaseDate": "2025-05-09",
+            "genre": [
+                "Comedy",
+                "Drama"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 7.2
+            },
+            "userRating": 8.0,
+            "likes": 21000,
+            "isFavorite": true,
+            "watchCount": 3,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Sharp humor and great storytelling!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-05-10"
+        },
+        {
+            "id": 22,
+            "name": "Gram Chikitsalaya",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 2 - Swayamsevi",
+            "franchise": "N/A",
+            "path": "C:/Series/GramChikitsalaya/S1/E2",
+            "poster": "https://example.com/posters/gramchikitsalaya_s1e2.jpg",
+            "actors": [
+                "Amol Parashar",
+                "Vinay Pathak",
+                "Anandeshwar Dwivedi"
+            ],
+            "director": "Rahul Pandey",
+            "releaseDate": "2025-05-09",
+            "genre": [
+                "Comedy",
+                "Drama"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 7.2
+            },
+            "userRating": 8.1,
+            "likes": 22000,
+            "isFavorite": true,
+            "watchCount": 2,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Village politics and healthcare struggles!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-05-12"
+        },
+        {
+            "id": 23,
+            "name": "Gram Chikitsalaya",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 3 - Jhootha Sudhir",
+            "franchise": "N/A",
+            "path": "C:/Series/GramChikitsalaya/S1/E3",
+            "poster": "https://example.com/posters/gramchikitsalaya_s1e3.jpg",
+            "actors": [
+                "Amol Parashar",
+                "Vinay Pathak",
+                "Anandeshwar Dwivedi"
+            ],
+            "director": "Rahul Pandey",
+            "releaseDate": "2025-05-09",
+            "genre": [
+                "Comedy",
+                "Drama"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 7.2
+            },
+            "userRating": 8.2,
+            "likes": 23000,
+            "isFavorite": true,
+            "watchCount": 4,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "A hilarious yet emotional episode!",
+                    "rating": 9
+                }
+            ],
+            "lastWatched": "2025-05-15"
+        },
+        {
+            "id": 24,
+            "name": "Gram Chikitsalaya",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 4 - Bharosa",
+            "franchise": "N/A",
+            "path": "C:/Series/GramChikitsalaya/S1/E4",
+            "poster": "https://example.com/posters/gramchikitsalaya_s1e4.jpg",
+            "actors": [
+                "Amol Parashar",
+                "Vinay Pathak",
+                "Anandeshwar Dwivedi"
+            ],
+            "director": "Rahul Pandey",
+            "releaseDate": "2025-05-09",
+            "genre": [
+                "Comedy",
+                "Drama"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 7.2
+            },
+            "userRating": 8.3,
+            "likes": 24000,
+            "isFavorite": true,
+            "watchCount": 5,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "Political tensions and personal dilemmas!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-05-18"
+        },
+        {
+            "id": 25,
+            "name": "Gram Chikitsalaya",
+            "seasonName": "Season 1",
+            "episodeName": "Episode 5 - Bohni",
+            "franchise": "N/A",
+            "path": "C:/Series/GramChikitsalaya/S1/E5",
+            "poster": "https://example.com/posters/gramchikitsalaya_s1e5.jpg",
+            "actors": [
+                "Amol Parashar",
+                "Vinay Pathak",
+                "Anandeshwar Dwivedi"
+            ],
+            "director": "Rahul Pandey",
+            "releaseDate": "2025-05-09",
+            "genre": [
+                "Comedy",
+                "Drama"
+            ],
+            "language": [
+                "Hindi"
+            ],
+            "preRating": {
+                "IMDb": 7.2
+            },
+            "userRating": 8.4,
+            "likes": 25000,
+            "isFavorite": true,
+            "watchCount": 6,
+            "reviews": [
+                {
+                    "username": "nizam",
+                    "comment": "A powerful season finale!",
+                    "rating": 10
+                }
+            ],
+            "lastWatched": "2025-05-20"
+        }
+    ]
+}
