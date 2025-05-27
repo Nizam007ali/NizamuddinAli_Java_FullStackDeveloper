@@ -1,0 +1,165 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+.mpar {
+  display: grid;
+  grid-template-columns: repeat(3, 371px);
+  padding: 2vh 11vh;
+  gap: 6vh;
+}
+
+.mchi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  height: 240px;
+  width: 100%;
+}
+
+h3{
+  font-size: 14px;
+}
+
+.mbut{
+  position: absolute;
+  top: 36vh;
+  padding: 1.5vh;
+  background-color: blue;
+  color: white;
+}
+.mbut1{
+  position: absolute;
+  top: 100vh;
+  padding: 1.5vh;
+  background-color: blue;
+  color: white;
+}
+.mbut2{
+  position: absolute;
+  top: 164vh;
+  padding: 1.5vh;
+  background-color: blue;
+  color: white;
+}
+.butr{
+  margin-left: 94%;
+}
+.a {
+  width: 100%;
+  margin-top: 4vh;
+  padding: 2vh;
+  height: auto;
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.mpar .mchi {
+  animation: slideIn 1s ease-out;
+}
+
+.navbut{
+  border: 2px solid black;
+}
+
+nav{
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 8vh;
+  opacity: 1;
+  width: 100%;
+  z-index: 2;
+}
+
+.searchelement {
+  top:9vh;
+  position: absolute;
+  right: 0; /* Aligns it to the right */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.searchDiv {
+  border: 2px solid black;
+  display: flex;
+  padding: 0;
+  height: 20vh;
+
+}
+
+.searchvid {  
+  margin: 0;
+  width: 40%;
+  max-height: 90%;
+  object-fit: contain;
+  padding-left: 2%;
+}
+.spage{
+  border: 1px solid black;
+  color: blue;
+  width: auto;
+  padding: 2px;
+}
