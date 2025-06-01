@@ -1,0 +1,39 @@
+🔥 Day-by-Day Plan with Projects
+Day	Topics	Project	Project Overview
+1	HTML Structure, Tags	Profile Page	Build a basic profile using headings, paragraphs, and image.
+2	Links, Lists, Images	Recipe Page	Use lists and images to create a cooking recipe.
+3	Tables	Timetable Page	Create a class or study timetable using <table>.
+4	Forms	Login Form	Design a basic HTML login form with inputs.
+5	Semantic HTML	Blog Post Page	Structure a blog article using <article>, <section>, etc.
+6	CSS Basics	Styled Profile Page	Add styling to your Day 1 profile with colors and fonts.
+7	Box Model, Padding, Margin	Card Layout	Create styled cards with borders, spacing, and hover effect.
+
+Day	Topics	Project	Project Overview
+8	CSS Selectors	News Headlines	Style different headlines using class and ID selectors.
+9	Colors & Units	Pricing Table	Use rem/em/% units and colors to build a pricing layout.
+10	Fonts & Typography	Landing Page Hero Section	Hero section with font families, sizes, and spacing.
+11	Display: Block, Inline, Inline-Block	Info Cards Grid	Arrange content blocks in a grid layout.
+12	Positioning	Sticky Navbar Page	Add a sticky navigation bar using position: sticky.
+13	Overflow, z-index	Popup Modal	Create a simple modal over the content using z-index.
+14	Responsive Image Gallery	Photo Album	Build a responsive gallery with multiple rows/columns.
+
+Day	Topics	Project	Project Overview
+15	CSS Flexbox Basics	Flex Layout Site	Build a layout using display: flex, column/row setup.
+16	Flexbox Advanced	Flexbox Dashboard	Create a sidebar + content dashboard using Flexbox.
+17	CSS Grid Basics	Grid Layout Page	Build a grid-based layout with header, main, sidebar.
+18	Grid Areas	Magazine Layout	Use named grid areas for a magazine-style layout.
+19	Transitions	Animated Button Set	Create buttons with smooth hover transitions.
+20	Keyframes, Animations	Animated Loader	Build a CSS-based spinner/loader with animation.
+21	Forms Styling	Styled Contact Form	Create and style a contact form using all input types.
+
+Day	Topics	Project	Project Overview
+22	Media Queries	Responsive About Page	Page that adapts for mobile, tablet, and desktop.
+23	Mobile-First Design	Mobile Portfolio	Design mobile-first and then scale up.
+24	Navbar Design	Responsive Navbar	Hamburger menu for smaller screens with toggle.
+25	Footer Design	Website Footer	Build a footer with multiple columns and links.
+26	CSS Variables	Theme Switcher	Create a light/dark theme using CSS variables.
+27	CSS Pseudo-classes/elements	Hover Card Gallery	Cards that reveal text on hover.
+28	CSS Clipping & Masking	Profile Mask Card	Circular cropped image and text using clip-path.
+29	Accessibility + SEO	Accessible Page	Use alt tags, roles, and semantic elements correctly.
+30	Final Real-World Clone	Netflix Landing Page Clone	Clone the Netflix homepage layout using Flexbox & Grid.
+

@@ -1,0 +1,368 @@
+📅 Day 1: HTML Basics & Page Structure
+Topics:
+
+What is HTML?
+
+HTML boilerplate (<!DOCTYPE html>, <html>, <head>, <body>)
+
+Headings, Paragraphs
+
+<br>, <hr>, <strong>, <em>, comments
+
+Mini Project: 🧍 Personal Profile Page
+
+Overview: Create a basic webpage with your name, intro paragraph, and contact info using headings and paragraphs.
+
+📅 Day 2: Lists, Links, and Images
+Topics:
+
+Ordered (<ol>) & unordered (<ul>) lists
+
+Anchor tags (<a href="">)
+
+Image tag (<img>)
+
+Absolute vs relative paths
+
+Mini Project: 🍲 Recipe Page
+
+Overview: Build a recipe page with a title, ingredients list, cooking steps, and an image of the dish.
+
+📅 Day 3: Tables in HTML
+Topics:
+
+<table>, <tr>, <td>, <th>
+
+colspan, rowspan
+
+Borders and basic table styling
+
+Mini Project: 📅 Study Timetable
+
+Overview: Create a weekly class/study timetable with subjects and time slots.
+
+📅 Day 4: Forms in HTML
+Topics:
+
+<form>, <input>, <label>, <button>
+
+Input types: text, email, password, checkbox, radio
+
+<textarea>, <select>, and form submission basics
+
+Mini Project: 🔐 Login Form
+
+Overview: Design a login form with username, password fields, and a submit button.
+
+📅 Day 5: Semantic HTML
+Topics:
+
+Semantic tags: <header>, <footer>, <section>, <article>, <nav>, <main>, <aside>
+
+Benefits of semantic HTML for SEO and accessibility
+
+Mini Project: ✍️ Blog Article Page
+
+Overview: Create a blog layout using semantic tags: header, article body, sidebar, and footer.
+
+📅 Day 6: CSS Basics & Inline Styling
+Topics:
+
+What is CSS?
+
+Inline styles: style=""
+
+Colors, font-size, background, border
+
+id and class usage
+
+Mini Project: 🎨 Styled Profile Page (Day 1 Upgrade)
+
+Overview: Revisit Day 1’s profile page and add CSS for background color, font styles, and text colors.
+
+📅 Day 7: Box Model & Spacing
+Topics:
+
+Margin, Padding, Border, Content
+
+Width & height
+
+display property basics
+
+Mini Project: 🗃️ Card Layout
+
+Overview: Design a card component with an image, title, description, and spacing/styling using padding and borders.
+
+📅 Day 8: CSS Selectors
+Topics:
+
+Element, class, ID selectors
+
+Grouping, descendant, and child selectors
+
+Combinators and pseudo-class intro (:hover, :first-child)
+
+Mini Project: 📰 News Headlines Page
+
+Overview: Build a page with various headlines, subheadings, and categories styled differently using selectors.
+
+📅 Day 9: Colors & CSS Units
+Topics:
+
+Color formats: hex, RGB, HSL
+
+Units: px, em, rem, %, vh, vw
+
+Background color and images
+
+Mini Project: 💸 Pricing Table
+
+Overview: Design a 3-column pricing table with different plans using rem/em units and color variations.
+
+📅 Day 10: Fonts & Typography
+Topics:
+
+font-family, font-size, line-height
+
+Google Fonts integration
+
+Text alignments and text-transform
+
+Mini Project: 🎯 Hero Section
+
+Overview: Create a hero section with large heading, subheading, and CTA button using modern typography.
+
+📅 Day 11: Display Types
+Topics:
+
+display: block, inline, inline-block, none
+
+visibility: hidden
+
+white-space, text-overflow
+
+Mini Project: 📦 Info Cards Grid
+
+Overview: Build a 3-column grid of informational cards using inline-block or block display.
+
+📅 Day 12: Positioning in CSS
+Topics:
+
+position: static, relative, absolute, fixed, sticky
+
+Top/right/bottom/left properties
+
+Layering content
+
+Mini Project: 📌 Sticky Navigation Page
+
+Overview: Create a header that sticks to the top when scrolling with a layout below.
+
+📅 Day 13: Overflow & Z-Index
+Topics:
+
+overflow: auto, scroll, hidden
+
+Scrollable divs
+
+z-index for layering elements
+
+Mini Project: 💬 Popup Modal
+
+Overview: Create a popup login/modal box layered above a dark background using z-index.
+
+📅 Day 14: Responsive Image Gallery
+Topics:
+
+max-width, height: auto
+
+Object-fit: cover, contain
+
+Responsive image techniques
+
+Mini Project: 🖼️ Responsive Photo Album
+
+Overview: Build a photo gallery that adjusts grid layout for different screen sizes.
+
+📅 Day 15: Intro to Flexbox
+Topics:
+
+display: flex
+
+Main axis & cross axis
+
+justify-content, align-items, flex-direction
+
+Mini Project: 📦 Flexbox Card Row
+
+Overview: Create a responsive row of cards (e.g., services section) that adjust space and alignment.
+
+📅 Day 16: Flexbox Alignment & Wrapping
+Topics:
+
+flex-wrap, align-content, gap
+
+Nested flexboxes
+
+Responsive flex behavior
+
+Mini Project: 🧑‍💻 Team Member Section
+
+Overview: Build a flex-based layout showing a grid of team members with names and roles.
+
+📅 Day 17: Introduction to CSS Grid
+Topics:
+
+display: grid, grid-template-columns, grid-template-rows
+
+gap, grid-column, grid-row, repeat()
+
+Mini Project: 🏠 Real Estate Listing Page
+
+Overview: Use Grid to layout multiple property cards in a structured format.
+
+📅 Day 18: Advanced Grid Techniques
+Topics:
+
+Grid areas and naming
+
+minmax(), auto-fit, auto-fill
+
+Responsive grids
+
+Mini Project: 📰 Responsive Blog Layout
+
+Overview: Build a blog page with image + content layout using named grid areas for header, content, sidebar, and footer.
+
+📅 Day 19: CSS Transitions & Hover Effects
+Topics:
+
+transition, transform, :hover, :active
+
+scale, rotate, translate
+
+Button hover animations
+
+Mini Project: ✨ Animated Buttons & Cards
+
+Overview: Create a page with cards and buttons that animate on hover using transitions.
+
+📅 Day 20: Responsive Design with Media Queries
+Topics:
+
+@media rules
+
+Breakpoints (mobile, tablet, desktop)
+
+Hiding/showing elements based on screen size
+
+Mini Project: 📱 Responsive Landing Page
+
+Overview: Build a landing page with header, hero section, and features that adjust layout for mobile and desktop.
+
+📅 Day 21: CSS Variables & Custom Properties
+Topics:
+
+:root and --custom-property
+
+Using var() for colors, spacing, font sizes
+
+Theming basics
+
+Mini Project: 🎨 Dark/Light Mode Toggle (CSS Only)
+
+Overview: Create a layout with two themes (light & dark) using CSS variables. Use a checkbox to toggle themes.
+
+📅 Day 22: CSS Animation
+Topics:
+
+@keyframes, animation-name, duration, iteration-count
+
+Animate position, opacity, scale
+
+Delays, ease-in/out
+
+Mini Project: 🚀 Loader Animation Page
+
+Overview: Build custom loaders, bouncing balls, or wave text animations.
+
+📅 Day 23: Advanced Transforms & Transitions
+Topics:
+
+transform: scale, rotate, skew, translate
+
+Combining transitions & transforms
+
+3D effects
+
+Mini Project: 🎡 Interactive Image Hover Gallery
+
+Overview: Create a hover-based image gallery with pop and spin effects.
+
+📅 Day 24: Building Complex Forms
+Topics:
+
+Input types, label, fieldset, legend
+
+Form validation (required, pattern)
+
+Styled form controls
+
+Mini Project: 📋 Contact + Feedback Form Page
+
+Overview: Design a two-column form with full styling, error messages, and placeholder behavior.
+
+📅 Day 25: HTML5 Accessibility Best Practices
+Topics:
+
+Semantic tags: header, main, aside, footer
+
+ARIA labels, alt text
+
+Keyboard navigation, tabindex
+
+Mini Project: ♿ Accessible Blog Layout
+
+Overview: Build a blog using semantic HTML and test with keyboard-only navigation.
+
+📅 Day 26: Cloning a Simple Product Page
+Mini Project: 🛍️ Apple Product Page Clone
+
+Overview: Recreate the layout of a single Apple product (e.g., iPhone landing page) using Flexbox and animations.
+
+📅 Day 27: Full Website Clone (Netflix Homepage)
+Mini Project: 📺 Netflix Homepage UI Clone
+
+Overview: Clone Netflix homepage layout with hero, horizontal scroll sections, and styled buttons. Make it responsive.
+
+📅 Day 28: Responsive Footer + Header Components
+Mini Project: 🧩 Reusable Footer & Nav Template
+
+Overview: Build header & footer components with dropdowns, responsive navbars, and mobile hamburger menu.
+
+📅 Day 29: Deploying a Static Website
+Topics:
+
+Folder structure best practices
+
+Hosting on GitHub Pages / Netlify
+
+Linking custom domains
+
+Mini Project: ☁️ Deploy Any Previous Project
+
+Overview: Choose any past project and deploy it live with a custom README and favicon.
+
+📅 Day 30: Personal Portfolio Website
+Final Project: 🌐 Developer Portfolio
+
+Overview:
+
+Sections: About Me, Projects, Skills, Contact Form
+
+Responsive and animated
+
+Dark/light mode toggle
+
+Deployed live with links to your best mini-projects
+
