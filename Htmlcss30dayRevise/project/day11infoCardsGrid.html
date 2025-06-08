@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Cards</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            padding: 2rem;
+        }
+
+        .card-container {
+            text-align: center;
+        }
+
+        .card {
+            display: inline-block;
+            width: 28%;
+            margin: 1%;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            vertical-align: top;
+            white-space: wrap;
+            text-align: justify;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Info Cards</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>HTML Basics</h2>
+            <p>Learn how to structure a webpage using headings, paragraphs, lists, and links.</p>
+        </div>
+        <div class="card">
+            <h2>CSS Styling</h2>
+            <p>Master CSS to style your HTML, create layouts, and make pages look beautiful.</p>
+        </div>
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Make your site interactive with JavaScript for better user experience and functionality.</p>
+        </div>
+
+        <div class="card hidden">
+            <h2>Hidden Card</h2>
+            <p>This won't be visible because of display: none.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

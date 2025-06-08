@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        p {
+            /* max-width: 800px; */
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sticky Navigation.</h1>
+    </header>
+    <div class="content">
+        <section>
+            <h2>HTML (HyperText Markup Language)</h2>
+            <p>
+                HTML is the standard language for creating web pages. It provides the structure of a webpage by using
+                elements and tags. These tags define headings, paragraphs, images, links, lists, and other content. HTML
+                works together with CSS and JavaScript to create complete web applications. The html tag wraps all
+                content, and head contains metadata like title and links to stylesheets. The body tag houses visible
+                elements. Forms allow user input, and tables help structure data. HTML5 introduced semantic elements
+                like header, nav, and footer for improved readability. Proper structuring improves SEO and
+                accessibility.
+            </p>
+        </section>
+        <section>
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <p>
+                CSS is used to style web pages and control their layout. It works by applying rules to HTML elements,
+                altering their appearance with properties like color, font, margin, padding, and positioning. There are
+                three ways to apply CSS: inline (within elements), internal inside style tags, and external (via linked
+                .css files). Modern techniques include Flexbox and Grid for layout design. CSS allows responsive design
+                using media queries. Animations and transitions enhance interactivity. CSS frameworks like Bootstrap
+                streamline styling. Variables in CSS simplify theme customization. Well-structured CSS ensures a
+                visually appealing and accessible website.
+            </p>
+        </section>
+        <section>
+            <h2>JavaScript (JS)</h2>
+            <p>
+                JavaScript is a dynamic programming language used for web interactivity. It runs in browsers, enabling
+                tasks like form validation, animations, and API calls. JS follows an event-driven model where functions
+                execute based on user interactions. It supports Object-Oriented Programming (OOP), manipulating data
+                efficiently. ES6 introduced modern features like let, const, arrow functions, and promises. JavaScript
+                interacts with the Document Object Model (DOM), modifying elements dynamically. Frameworks like React,
+                Angular, and Vue simplify development. Node.js allows JS to run on servers. Mastering JavaScript is
+                crucial for full-stack development, enhancing user experiences and app functionality.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>
