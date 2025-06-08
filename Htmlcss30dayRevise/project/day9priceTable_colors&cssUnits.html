@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price table</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 2rem;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .price {
+            font-size: 2rem;
+            color: #007bff;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .features li {
+            margin: 0.5rem 0;
+        }
+        .card button {
+            background-color: #28a745;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+        .card:nth-child(2) {
+            background-color: #f0f8ff;
+        }
+        .card:nth-child(3) {
+            background-color: #fffbe6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-bottom: 2rem;">Choose your plan.</h1>
+    <div class="pricing-container">
+        <div class="card">
+            <h2>Basic</h2>
+            <p class="price">500 Rs/month</p>
+            <ul class="features">
+                <li>1 User</li>
+                <li>5 projects</li>
+                <li>Email Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div class="card">
+            <h2>Pro</h2>
+            <p class="price">800 Rs/month</p>
+            <ul class="features">
+                <li>5 Users</li>
+                <li>Unlimited projects</li>
+                <li>Priority Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div class="card">
+            <h2>Premium</h2>
+            <p class="price">1000 Rs/month</p>
+            <ul class="features">
+                <li>Unlimited Users</li>
+                <li>Advanced Analytics</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+    </div>
+</body>
+
+</html>
