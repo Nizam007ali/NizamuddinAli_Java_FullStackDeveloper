@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            align-content: flex-start;
+        }
+        .member-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 220px;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        .member-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .member-card h3 {
+            margin: 0.5rem 0 0.3rem;
+        }
+        .member-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meet Our Team</h1>
+    <div class="team-container">
+        <div class="member-card">
+            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Team Member">
+            <h3>Ravi Sharma</h3>
+            <p>Frontend Developer</p>
+        </div>
+        <div class="member-card">
+            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Team Member">
+            <h3>Sneha Patel</h3>
+            <p>UI/UX Designer</p>
+        </div>
+        <div class="member-card">
+            <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Team Member">
+            <h3>Aman Verma</h3>
+            <p>Backend Engineer</p>
+        </div>
+        <div class="member-card">
+            <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Team Member">
+            <h3>Nikita Rao</h3>
+            <p>Project Manager</p>
+        </div>
+    </div>
+</body>
+
+</html>
