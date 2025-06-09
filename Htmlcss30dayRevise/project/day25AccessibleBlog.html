@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Blog</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header, nav, main, article, aside, footer {
+            padding: 1rem;
+            margin-top: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        nav a {
+            margin-right: 10px;
+        }
+        a:focus {
+            outline: 2px dashed blue;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>♿ My Accessible Blog</h1>
+        <p>Welcome to a web-accessible demo site.</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="#article1" tabindex="0">Post 1</a>
+        <a href="#article2" tabindex="0">Post 2</a>
+    </nav>
+    <main>
+        <article id="article1">
+            <h2>🌿 The Importance of Semantic HTML</h2>
+            <p>Semantic elements help screen readers and browsers understand your content.</p>
+            <img src="images/chocolate-cake.jpeg" alt="Diagram explaining semantic HTML">
+        </article>
+        <article id="article2">
+            <h2>🧠 ARIA Roles Simplified</h2>
+            <p>ARIA roles help when native HTML falls short. But use them sparingly and correctly.</p>
+        </article>
+    </main>
+    <aside>
+        <h3>📢 Latest News</h3>
+        <ul>
+            <li><a href="#">Web Accessibility Laws 2025</a></li>
+            <li><a href="#">Top Screen Reader Tools</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Accessible Web Co.</p>
+    </footer>
+
+</body>
+
+</html>
