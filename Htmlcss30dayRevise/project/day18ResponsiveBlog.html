@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main sidebar"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        header,
+        main,
+        aside,
+        footer {
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .blog-post {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+
+            .blog-post {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>My Blog</h1>
+            <p>Insights on tech, life, and productivity</p>
+        </header>
+        <main>
+            <div class="blog-post">
+                <img src="images/chocolate-cake.jpeg" alt="Blog">
+                <div>
+                    <h2>Why HTML & CSS Still Matter</h2>
+                    <p>
+                        Even in a world full of JS frameworks, HTML and CSS form the essential backbone of web
+                        development...
+                    </p>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <h3>Categories</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Frontend Tips</li>
+                <li>Career Advice</li>
+                <li>Design Trends</li>
+            </ul>
+        </aside>
+        <footer>
+            &copy; 2025 My Blog. All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
