@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .hero {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            flex: 1 1 30%;
+            min-width: 250px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1rem;
+            }
+
+            .feature {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>🌍 MySite</h2>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Responsive Landing Page</h1>
+        <p>Resize the screen to see the magic!</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>🚀 Fast</h3>
+            <p>Built for performance and speed.</p>
+        </div>
+        <div class="feature">
+            <h3>🎯 Simple</h3>
+            <p>Clean UI and minimal design.</p>
+        </div>
+        <div class="feature">
+            <h3>💡 Smart</h3>
+            <p>Works perfectly on all devices.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
