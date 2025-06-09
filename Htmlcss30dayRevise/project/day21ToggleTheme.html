@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --txt-color: #000000;
+            --card-bg: #f0f0f0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 2rem;
+            transition: background 0.4s, color 0.4s;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.4s;
+        }
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        input[type="checkbox"] {
+            width: 40px;
+            height: 20px;
+            accent-color: #333;
+        }
+        body.dark {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+        }
+        body.white {
+            --bg-color: #ffffff;
+            --txt-color: #000000;
+            --card-bg: #f0f0f0;
+        }
+        body.red {
+            --bg-color: #fc0000;
+            --text-color: #ffffff;
+            --card-bg: #ff5757;
+        }
+        .card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="light">
+    <div class="toggle-container">
+        <label for="themeToggle">Mode</label>
+        <select id="themeToggle">
+            <option value="light">Light</option>
+            <option value="dark">dark</option>
+            <option value="red">red</option>
+        </select>
+    </div>
+    <div class="card">
+        <h2>Hello, World!</h2>
+        <p>This is a themed card using CSS custom properties.</p>
+    </div>
+    <script>
+        const toggle = document.getElementById("themeToggle");
+        toggle.addEventListener("change", () => {
+            document.body.className=themeToggle.value;
+        });
+    </script>
+</body>
+
+</html>
