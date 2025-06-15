@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 85vh;
+      text-align: center;
+    }
+    h1 {
+      padding: 4vh 0;
+      font-size: 4vh;
+      width: 100%;
+      height: 5vh;
+      background-color: aquamarine;
+    }
+    .slider {
+      overflow: hidden;
+      height: 86vh;
+      width: 100%;
+      position: relative;
+    }
+    .slidewrap {
+      width: 390vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10vw;
+      margin-left: 15vw;
+      animation: slide 12s infinite;
+    }
+    .slides {
+      width: 70vw;
+      height: 80%;
+      background-color: black;
+    }
+    @keyframes slide {
+      0%,100% {
+        transform: translateX(0%);
+      }
+      20% {
+        transform: translateX(-80vw);
+      }
+      40% {
+        transform: translateX(-160vw);
+      }
+      60% {
+        transform: translateX(-240vw);
+      }
+      80% {
+        transform: translateX(-320vw);
+      }
+    }
+
+    .slide1 {
+      animation: scale1 12s infinite;
+    }
+
+    @keyframes scale1 {
+      0%,100% {
+        transform: scale(1.1);
+      }
+      20%,40%,60%,80% {
+        transform: scale(1);
+      }
+    }
+
+    .slide2 {
+      animation: scale2 12s infinite;
+    }
+
+    @keyframes scale2 {
+      20% {
+        transform: scale(1.1);
+      }
+      0%,100%,40%,60%,80% {
+        transform: scale(1);
+      }
+    }
+
+    .slide3 {
+      animation: scale3 12s infinite;
+    }
+
+    @keyframes scale3 {
+      40% {
+        transform: scale(1.1);
+      }
+      20%,0%,100%,60%,80% {
+        transform: scale(1);
+      }
+    }
+
+    .slide4 {
+      animation: scale4 12s infinite;
+    }
+
+    @keyframes scale4 {
+      60% {
+        transform: scale(1.1);
+      }
+      20%,40%,0%,100%,80% {
+        transform: scale(1);
+      }
+    }
+
+    .slide5 {
+      animation: scale5 12s infinite;
+    }
+
+    @keyframes scale5 {
+      80% {
+        transform: scale(1.1);
+      }
+      20%,40%,60%,0%,100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Slider Animations</h1>
+  <div class="slider">
+    <div class="slidewrap">
+      <div class="slides slide1"></div>
+      <div class="slides slide2"></div>
+      <div class="slides slide3"></div>
+      <div class="slides slide4"></div>
+      <div class="slides slide5"></div>
+    </div>
+  </div>
+</body>
+</html>
