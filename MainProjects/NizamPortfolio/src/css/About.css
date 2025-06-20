@@ -1,0 +1,29 @@
+.about {
+    width: 89vw;
+    margin-top: 22vh;
+    padding: 0.5vh 5vw ;
+}
+
+.abouth1 {
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+}
+.aboutp1 {
+    font-size: 1.4rem;
+    color: #000;
+    text-align: justify;
+    margin-top: .5vh;
+    text-indent: 4vw;
+    line-height: 4vh;
+}
+
+
+.aboutp1s1 {
+    font-weight: bold;
+}
+
+.aboutp1s2 {
+    display: block;
+    text-indent: 8vw;
+}
