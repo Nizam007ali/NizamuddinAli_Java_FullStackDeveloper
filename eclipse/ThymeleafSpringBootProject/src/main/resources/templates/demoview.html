@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Demo View</title>
+</head>
+<body>
+    <h1>Hello, <span th:text="${username}">User</span>!</h1>
+
+    <p th:if="${isAdmin}">You are an admin.</p>
+
+    <h3>Items:</h3>
+    <ul>
+        <li th:each="item : ${items}" th:text="${item}"></li>
+    </ul>
+</body>
+</html>
