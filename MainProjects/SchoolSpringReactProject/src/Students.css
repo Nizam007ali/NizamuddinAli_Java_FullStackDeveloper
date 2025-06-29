@@ -1,0 +1,98 @@
+.students-container {
+  padding: 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+}
+
+.students-title {
+  color: #2e3b4e;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.students-title button {
+  height: 80%;
+  font-size: 16px;
+}
+
+.student-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.student-table,
+.subjects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.student-table td,
+.subjects-table td {
+  padding: 7px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.subjects-table {
+  background-color: #f9f9f9;
+}
+
+.subjects-table td {
+  border: 1px solid #ddd;
+}
+
+.show {
+  width: 100%;
+}
+
+.butflex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.butflex button {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.butflex button:hover {
+  background-color: #ccc;
+}
+
+.addStudent {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+}
+.page {
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+}
+.page:hover {
+  background-color: rgb(165, 165, 165);
+  color: blue;
+}
+.page.active {
+  color: blue;
+}
+.sizes{
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
