@@ -1,11 +1,11 @@
 import React from 'react';
-import './css/About.css';
+import './css/Projects.css';
 
 const projects = [
   {
-    title: "Portfolio react app",
-    description: "Myportfolio with freelancing taking payment through razor pay.",
-    tech: "React,  razorpay",
+    title: "Portfolio React App",
+    description: "My portfolio with freelancing and payment through Razorpay.",
+    tech: "React, Razorpay",
     github: "https://github.com/Nizam007ali/NizamuddinAli_Java_FullStackDeveloper/tree/main/MainProjects/NizamPortfolio",
     demo: "https://shiny-dusk-7816ac.netlify.app/",
   },
@@ -20,23 +20,22 @@ const projects = [
 
 function Projects() {
   return (
-    <div  className="about">
-      <h2>Projects</h2>
-      <div>
+    <section className="projects-section">
+      <h2 className="projects-title">Projects</h2>
+      <div className="projects-container">
         {projects.map((project) => (
-          <div key={project.title}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <p>Tech: {project.tech}</p>
-            <div>
-              <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>
-              </div><div>
-              <a href={project.demo} target="_blank" rel="noreferrer">Demo</a>
+          <div className="project-card" key={project.title}>
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-desc">{project.description}</p>
+            <p className="project-tech"><strong>Tech:</strong> {project.tech}</p>
+            <div className="project-links">
+              <a href={project.github} className="project-link" target="_blank" rel="noreferrer">GitHub</a>
+              <a href={project.demo} className="project-link demo" target="_blank" rel="noreferrer">Demo</a>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
