@@ -30,6 +30,7 @@ function Projects() {
             <p>Tech: {project.tech}</p>
             <div>
               <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>
+              </div><div>
               <a href={project.demo} target="_blank" rel="noreferrer">Demo</a>
             </div>
           </div>
