@@ -3,11 +3,11 @@ import './css/About.css';
 
 const projects = [
   {
-    title: "To-Do App",
-    description: "Simple task tracker with add/delete features.",
-    tech: "React, useState",
-    github: "https://github.com/yourname/todo",
-    demo: "https://todo-demo.netlify.app",
+    title: "Portfolio react app",
+    description: "Myportfolio with freelancing taking payment through razor pay.",
+    tech: "React,  razorpay",
+    github: "https://github.com/Nizam007ali/NizamuddinAli_Java_FullStackDeveloper/tree/main/MainProjects/NizamPortfolio",
+    demo: "https://shiny-dusk-7816ac.netlify.app/",
   },
   {
     title: "E-commerce",

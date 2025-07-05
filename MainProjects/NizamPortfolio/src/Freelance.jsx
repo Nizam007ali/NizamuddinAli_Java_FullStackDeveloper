@@ -64,7 +64,7 @@ function Freelance() {
     }
 
     const options = {
-      key: "rzp_test_1234567890abcd", // Replace with your Razorpay key
+      key: "rzp_test_2W1AZgwdOcsoAb", // Replace with your Razorpay key
       amount: price * 100,
       currency: "INR",
       name: "Nizamuddin Ali",
@@ -73,7 +73,7 @@ function Freelance() {
         alert("Payment successful! ID: " + response.razorpay_payment_id);
 
         // ✅ Optional: Email notification via EmailJS
-        // emailjs.sendForm('your_service_id', 'your_template_id', form.current, 'your_user_id');
+        emailjs.sendForm('service_k5ckykj', 'template_kqtxkti', form.current, 'Mn4W1R516uhM2-CTM');
       },
       prefill: {
         name: form.current.name.value,
