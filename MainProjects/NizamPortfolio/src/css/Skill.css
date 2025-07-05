@@ -1,0 +1,62 @@
+.skill {
+  max-width: 1200px;
+  margin: 40px auto;
+  margin-top: 22vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.skill h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.skill h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #333;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  background: #f9f9f9;
+}
+
+.skill h4 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #007bff;
+}
+
+.skill p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .skill {
+    padding: 10px;
+  }
+
+  .skill h2 {
+    font-size: 2rem;
+  }
+
+  .skill h3 {
+    font-size: 1.5rem;
+  }
+
+  .skill h4 {
+    font-size: 1.2rem;
+  }
+
+  .skill p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,65 @@
+.freelance {
+  max-width: 700px;
+  margin: 50px auto;
+  margin-top: 28vh;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.freelance-title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.freelance-desc {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.freelance-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.freelance-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.freelance-form input,
+.freelance-form textarea,
+.freelance-form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.freelance-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.freelance-button:hover {
+  background: #0056b3;
+}
+
+.freelance-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+

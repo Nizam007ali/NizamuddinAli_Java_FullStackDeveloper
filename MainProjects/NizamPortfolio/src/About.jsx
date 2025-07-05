@@ -1,36 +1,46 @@
-import React from 'react'
-import './css/About.css'
+import React from 'react';
+import './css/About.css';
 
 function About() {
   return (
     <section id="about" className="about">
       <div className="container">
         <h2 className="abouth1">About Me</h2>
+        
         <p className="aboutp1">
-          Hello! I'm <span className="aboutp1s1">Nizamuddin Ali</span>, a passionate full stack
-          developer with a strong foundation as follows:-
+          Hello! I'm <span className="aboutp1s1">Nizamuddin Ali</span>, a passionate and detail-oriented full stack developer
+          with a strong foundation in modern web development technologies.
+        </p>
+
+        <p className="aboutp1">
+          <span className="aboutp1s2"><b>Frontend:</b></span> HTML, CSS, JavaScript, React  
           <br />
-          <span className="aboutp1s2"><b>Frontend: </b>Html, Css, JavaScript, React.</span>
-          <span className="aboutp1s2"><b>Backend: </b>Cpp, Java, Hibernate, Spring, Spring Boot.</span>
-          <span className="aboutp1s2"><b>Database: </b>MySQL.</span>
-          <span className="aboutp1s2"><b>Tools: </b> Git, Jeera, Figma, Visual studio(React), Netbeans22 and Eclipse(Java).</span>
+          <span className="aboutp1s2"><b>Backend:</b></span> C++, Java, Hibernate, Spring, Spring Boot  
+          <br />
+          <span className="aboutp1s2"><b>Database:</b></span> MySQL  
+          <br />
+          <span className="aboutp1s2"><b>Tools:</b></span> Git, Jira, Figma, VS Code (React), NetBeans 22, Eclipse (Java)
         </p>
-        <p className="aboutp1">I enjoy building efficient, user-friendly web applications and learning new technologies
-          to solve real-world problems.
-        </p>
+
         <p className="aboutp1">
-          My journey started with a fascination for coding and technology. Over time, I've honed my skills through
-          projects, self-learning, and continuous exploration of modern development practices. Whether it's
-          building dynamic UIs with React or designing robust APIs with Spring Boot, I'm always eager to grow and
-          contribute.
+          I enjoy building clean, user-friendly, and high-performance web applications. I continuously challenge myself to
+          learn new technologies and apply them in real-world projects that solve problems and add value.
         </p>
+
         <p className="aboutp1">
-          Outside of tech, I enjoy playic chess, watching movies, and listening music.
-          My mission is to keep improving every day and build software that makes a difference.
+          My journey began with a deep curiosity for coding and problem-solving. Since then, I've grown through
+          hands-on projects, self-learning, and consistent exploration of full stack development practices. Whether it's
+          creating dynamic interfaces with React or designing scalable backend systems with Spring Boot, I'm always
+          committed to writing clean, maintainable, and efficient code.
+        </p>
+
+        <p className="aboutp1">
+          Outside of development, I enjoy playing chess, watching movies, and listening to music. I believe in continuous
+          improvement and strive to build software that makes a real impact.
         </p>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
