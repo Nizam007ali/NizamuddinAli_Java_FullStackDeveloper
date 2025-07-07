@@ -6,18 +6,18 @@ function About() {
     <section id="about" className="about">
       <div className="container">
         <h2 className="abouth1">About Me</h2>
-        
+
         <p className="aboutp1">
           Hello! I'm <span className="aboutp1s1">Nizamuddin Ali</span>, a passionate and detail-oriented full stack developer
           with a strong foundation in modern web development technologies.
         </p>
 
         <p className="aboutp1">
-          <span className="aboutp1s2"><b>Frontend:</b></span> HTML, CSS, JavaScript, React  
+          <span className="aboutp1s2"><b>Frontend:</b></span> HTML, CSS, JavaScript, React
           <br />
-          <span className="aboutp1s2"><b>Backend:</b></span> C++, Java, Hibernate, Spring, Spring Boot  
+          <span className="aboutp1s2"><b>Backend:</b></span> C++, Java, Hibernate, Spring, Spring Boot
           <br />
-          <span className="aboutp1s2"><b>Database:</b></span> MySQL  
+          <span className="aboutp1s2"><b>Database:</b></span> MySQL
           <br />
           <span className="aboutp1s2"><b>Tools:</b></span> Git, Jira, Figma, VS Code (React), NetBeans 22, Eclipse (Java)
         </p>
@@ -38,6 +38,23 @@ function About() {
           Outside of development, I enjoy playing chess, watching movies, and listening to music. I believe in continuous
           improvement and strive to build software that makes a real impact.
         </p>
+        {/* <iframe
+          src="/NizamuddinAli_JavaFullStackDeveloper_Resume.pdf"
+          width="100%"
+          height="500px"
+          title="My Resume"
+          style={{ border: '1px solid #ccc', borderRadius: '10px' }}
+        > 
+        </iframe> */}
+        <a
+          href="/NizamuddinAli_JavaFullStackDeveloper_Resume.pdf"
+          download
+          className="download-button"
+          target="_blank"
+          rel="noreferrer"
+        >
+          📥 Download Resume (PDF)
+        </a>
       </div>
     </section>
   );

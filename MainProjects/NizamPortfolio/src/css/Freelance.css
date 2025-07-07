@@ -1,13 +1,12 @@
 .freelance {
-  max-width: 700px;
-  margin: 50px auto;
-  margin-top: 28vh;
-  padding: 20px;
+  margin: 50px 50px 0px;
+  margin-top: 20vh;
+  padding: 10px 20px 0px;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .freelance-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
   color: #007bff;
   margin-bottom: 20px;
@@ -15,8 +14,8 @@
 
 .freelance-desc {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-size: 1rem;
   color: #444;
 }
 
@@ -34,8 +33,8 @@
 .freelance-form input,
 .freelance-form textarea,
 .freelance-form select {
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 8px;
+  margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
@@ -45,11 +44,12 @@
   background: #007bff;
   color: #fff;
   border: none;
-  padding: 12px;
+  padding: 12px 12px 12px 0px;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
+  width: auto;
 }
 
 .freelance-button:hover {
@@ -58,8 +58,30 @@
 
 .freelance-price {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #007bff;
   margin-bottom: 20px;
 }
 
+.formgridp {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  row-gap: 6px;
+}
+
+@media (min-width:700px) {
+  .formgridp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formgridc:nth-child(5),
+  .formgridc:nth-child(6) {
+    grid-column: span 2;
+  }
+}
+
+.formgridc {
+  display: flex;
+  flex-direction: column;
+}

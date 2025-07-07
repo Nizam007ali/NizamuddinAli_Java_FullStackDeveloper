@@ -64,16 +64,14 @@ function Freelance() {
     }
 
     const options = {
-      key: "rzp_test_2W1AZgwdOcsoAb", // Replace with your Razorpay key
+      key: "rzp_test_2W1AZgwdOcsoAb",
       amount: price * 100,
       currency: "INR",
       name: "Nizamuddin Ali",
       description: `Website Order - ${type}`,
       handler: function (response) {
         alert("Payment successful! ID: " + response.razorpay_payment_id);
-
-        // ✅ Optional: Email notification via EmailJS
-        emailjs.sendForm('service_k5ckykj', 'template_kqtxkti', form.current, 'Mn4W1R516uhM2-CTM');
+        emailjs.sendForm('service_k5ckykj', 'template_3580ikc', form.current, 'Mn4W1R516uhM2-CTM');
       },
       prefill: {
         name: form.current.name.value,
@@ -91,40 +89,53 @@ function Freelance() {
   return (
     <div className="freelance">
       <h2 className="freelance-title">Order a Custom Website</h2>
-
       <form ref={form} onSubmit={handlePayment} className="freelance-form">
-        <label>Name</label>
-        <input name="name" type="text" placeholder="Your Name" required />
-
-        <label>Email</label>
-        <input name="email" type="email" placeholder="Your Email" required />
-
-        <label>Website Type</label>
-        <select name="type" value={type} onChange={handleTypeChange} required>
-          <option value="">Select Type</option>
-          <option value="Portfolio">Portfolio</option>
-          <option value="Business">Business</option>
-          <option value="E-commerce">E-commerce</option>
-          <option value="Blog">Blog</option>
-        </select>
-
-        <label>Number of Pages</label>
-        <input
-          name="pages"
-          type="number"
-          min="1"
-          max="20"
-          value={pages || 1}
-          onChange={handlePagesChange}
-          required
-        />
-
-        <label>Project Details</label>
-        <textarea name="details" placeholder="Describe your idea..." rows="4" required />
-
-        <p className="freelance-price">Estimated Price: ₹{price}</p>
-
-        <button type="submit" className="freelance-button">Pay & Order</button>
+        <div className="formgridp">
+          <div className="formgridc">
+            <label>Name</label>
+            <input name="name" type="text" placeholder="Your Name" required />
+          </div>
+          <div className="formgridc">
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Your Email" required />
+          </div>
+          <div className="formgridc">
+            <label>Website Type</label>
+            <select name="type" value={type} onChange={handleTypeChange} required>
+              <option value="">Select Type</option>
+              <option value="Portfolio">Portfolio</option>
+              <option value="Business">Business</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="Blog">Blog</option>
+            </select>
+          </div>
+          <div className="formgridc">
+            <label>Number of Pages</label>
+            <input
+              name="pages"
+              type="number"
+              min="1"
+              max="20"
+              value={pages || 1}
+              onChange={handlePagesChange}
+              required
+            />
+            <input
+              name="message"
+              type="hidden"
+              value='order placed by user'
+              disabled
+            />
+          </div>
+          <div className="formgridc" >
+            <label>Project Details</label>
+            <textarea name="details" placeholder="Describe your idea..." rows="" required />
+          </div>
+          <div className="formgridc" >
+            <p className="freelance-price">Estimated Price: ₹{price}</p>
+            <button type="submit" className="freelance-button">Pay & Order</button>
+          </div>
+        </div>
       </form>
     </div>
   );
