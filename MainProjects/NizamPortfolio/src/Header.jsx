@@ -19,6 +19,17 @@ function Header() {
         document.documentElement.setAttribute('data-theme', storedTheme);
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => {
+            handleOpen();
+        };
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const navLinks = [
         { path: '/', label: 'About' },
         { path: '/projects', label: 'Projects' },
@@ -28,19 +39,30 @@ function Header() {
     ];
 
     const handleOpen = () => {
-        var x = document.getElementById("headernav");
-        var x1 = document.getElementById("headernav1");
-        var y = document.getElementById("header");
-        if (x.style.display === "flex") {
-            x.style.display = "none";
-            x1.style.display = "flex";
-            y.style.height = "24vh";    
-            document.body.style.overflowY = 'initial';
+        if (window.innerWidth <= 600) {
+            var x = document.getElementById("headernav");
+            var x1 = document.getElementById("headernav1");
+            var y = document.getElementById("header");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                x1.style.display = "flex";
+                y.style.height = "24vh";
+                document.body.style.overflowY = 'initial';
+            } else {
+                x.style.display = "flex";
+                x1.style.display = "none";
+                y.style.height = "58vh";
+                document.body.style.overflowY = 'hidden';
+            }
         } else {
-            x.style.display = "flex";
-            x1.style.display = "none";
-            y.style.height = "58vh";
-            document.body.style.overflowY = 'hidden';
+            var x = document.getElementById("headernav");
+            var x1 = document.getElementById("headernav1");
+            var y = document.getElementById("header");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+                x1.style.display = "none";
+                y.style.height = "24vh";
+            }
         }
     }
 
@@ -75,7 +97,7 @@ function Header() {
                         <Link
                             key={idx}
                             to={link.path}
-                             onClick={handleOpen}
+                            onClick={handleOpen}
                             className={`link ${location.pathname === link.path ? 'active' : ''}`}
                         >
                             {link.label}

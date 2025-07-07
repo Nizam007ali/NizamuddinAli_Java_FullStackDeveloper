@@ -37,9 +37,11 @@ body {
   height: 24vh;
   flex-wrap: wrap;
   overflow: hidden;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .header img {
+  outline: 1px solid black;
   width: 16vh;
   height: 16vh;
   border-radius: 10%;
@@ -162,7 +164,7 @@ body {
   gap: 2px;
   width: 20px;
   padding: 5px;
-  margin-left: 85%;
+  margin-left: 90%;
   border: 1px solid var(--text-color);
   border-radius: 2px;
   display: none;
