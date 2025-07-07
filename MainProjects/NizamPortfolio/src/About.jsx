@@ -38,14 +38,6 @@ function About() {
           Outside of development, I enjoy playing chess, watching movies, and listening to music. I believe in continuous
           improvement and strive to build software that makes a real impact.
         </p>
-        {/* <iframe
-          src="/NizamuddinAli_JavaFullStackDeveloper_Resume.pdf"
-          width="100%"
-          height="500px"
-          title="My Resume"
-          style={{ border: '1px solid #ccc', borderRadius: '10px' }}
-        > 
-        </iframe> */}
         <a
           href="/NizamuddinAli_JavaFullStackDeveloper_Resume.pdf"
           download
