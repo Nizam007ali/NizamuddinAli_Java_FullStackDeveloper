@@ -163,11 +163,13 @@ body {
   width: 20px;
   padding: 5px;
   margin-left: 85%;
-  border: 1px solid pink;
-  /* display: none; */
+  border: 1px solid var(--text-color);
+  border-radius: 2px;
+  display: none;
 }
+
 .headernav1 div {
-  background-color: white;
+  background-color: var(--text-color);
   padding: 1px;
 }
 
@@ -197,12 +199,12 @@ body {
     width: 75%;
   }
 
-  .headertext h1 {
+  .htext {
     font-size: 1.2rem;
   }
 
   .headertext p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .headernav {
@@ -233,6 +235,14 @@ body {
   .theme-toggle {
     font-size: 0.9rem;
     padding: 4px 8px;
-    margin-top: 10px;
+  }
+
+  .headernav1 {
+    display: flex;
+  }
+
+  .headernav1:hover {
+    display: flex;
+    background-color: var(--link-hover);
   }
 }

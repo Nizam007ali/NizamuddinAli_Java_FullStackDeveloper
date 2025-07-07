@@ -27,8 +27,25 @@ function Header() {
         { path: '/freelance', label: 'Freelance' }
     ];
 
+    const handleOpen = () => {
+        var x = document.getElementById("headernav");
+        var x1 = document.getElementById("headernav1");
+        var y = document.getElementById("header");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+            x1.style.display = "flex";
+            y.style.height = "24vh";    
+            document.body.style.overflowY = 'initial';
+        } else {
+            x.style.display = "flex";
+            x1.style.display = "none";
+            y.style.height = "58vh";
+            document.body.style.overflowY = 'hidden';
+        }
+    }
+
     return (
-        <div className='header'>
+        <div className='header' id='header'>
             <div className="headerimg"><img src={nizamLogo} alt="Logo" /></div>
             <div className='headercontent'>
                 <div className='headertext'>
@@ -53,18 +70,19 @@ function Header() {
                     </p>
                 </div>
 
-                <nav className='headernav'>
+                <nav className='headernav' id='headernav'>
                     {navLinks.map((link, idx) => (
                         <Link
                             key={idx}
                             to={link.path}
+                             onClick={handleOpen}
                             className={`link ${location.pathname === link.path ? 'active' : ''}`}
                         >
                             {link.label}
                         </Link>
                     ))}
                 </nav>
-                <nav className='headernav1'>
+                <nav className='headernav1' id='headernav1' onClick={handleOpen}>
                     <div></div>
                     <div></div>
                     <div></div>
