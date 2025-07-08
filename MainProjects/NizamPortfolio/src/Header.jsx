@@ -19,17 +19,6 @@ function Header() {
         document.documentElement.setAttribute('data-theme', storedTheme);
     }, []);
 
-    useEffect(() => {
-        // const handleResize = () => {
-        //     handleOpen();
-        // };
-        // window.addEventListener('resize', handleResize);
-        // handleResize();
-        // return () => {
-        //     window.removeEventListener('resize', handleResize);
-        // };
-    }, []);
-
     const navLinks = [
         { path: '/', label: 'About' },
         { path: '/projects', label: 'Projects' },

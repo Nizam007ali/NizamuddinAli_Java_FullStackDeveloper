@@ -187,8 +187,12 @@ body {
 /* ================= Responsive (Mobile) ================= */
 @media (max-width: 600px) {
 
+  .header {
+    gap: 0vh;
+  }
+
   .htext {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .headertext p {
