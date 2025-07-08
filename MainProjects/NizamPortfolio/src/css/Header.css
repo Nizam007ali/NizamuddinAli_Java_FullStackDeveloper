@@ -205,6 +205,10 @@ body {
     align-items: center;
   }
 
+  .header img:hover {
+    transform: scale(1.125);
+  }
+
   .link {
     text-align: center;
   }

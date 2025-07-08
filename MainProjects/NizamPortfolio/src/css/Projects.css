@@ -1,6 +1,30 @@
+:root {
+  --projects-bg: #f9f9f9;
+  --card-bg: #ffffff;
+  --text-color: #333;
+  --text-sub: #444;
+  --text-light: #666;
+  --btn-github: #0077cc;
+  --btn-github-hover: #005fa3;
+  --btn-demo: #28a745;
+  --btn-demo-hover: #1e7e34;
+}
+
+[data-theme='dark'] {
+  --projects-bg: #1e1e1e;
+  --card-bg: #2c2c2c;
+  --text-color: #f0f0f0;
+  --text-sub: #dddddd;
+  --text-light: #bbbbbb;
+  --btn-github: #2196f3;
+  --btn-github-hover: #1976d2;
+  --btn-demo: #4caf50;
+  --btn-demo-hover: #388e3c;
+}
+
 .projects-section {
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: var(--projects-bg);
   min-height: 66vh;
   margin-top: 22vh;
 }
@@ -9,7 +33,7 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #333;
+  color: var(--text-color);
 }
 
 .projects-container {
@@ -20,13 +44,13 @@
 }
 
 .project-card {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: var(--card-bg);
+  border: 1px solid #ccc;
   padding: 1.5rem;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s;
 }
 
 .project-card:hover {
@@ -36,18 +60,18 @@
 .project-title {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: var(--text-color);
 }
 
 .project-desc {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #444;
+  color: var(--text-sub);
 }
 
 .project-tech {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-light);
   margin-bottom: 1rem;
 }
 
@@ -60,20 +84,35 @@
   text-decoration: none;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
-  background-color: #0077cc;
+  background-color: var(--btn-github);
   color: white;
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
 .project-link:hover {
-  background-color: #005fa3;
+  background-color: var(--btn-github-hover);
 }
 
 .project-link.demo {
-  background-color: #28a745;
+  background-color: var(--btn-demo);
 }
 
 .project-link.demo:hover {
-  background-color: #1e7e34;
+  background-color: var(--btn-demo-hover);
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 90%;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-link {
+    text-align: center;
+  }
 }

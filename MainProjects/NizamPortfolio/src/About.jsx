@@ -13,16 +13,6 @@ function About() {
         </p>
 
         <p className="aboutp1">
-          <span className="aboutp1s2"><b>Frontend:</b></span> HTML, CSS, JavaScript, React
-          <br />
-          <span className="aboutp1s2"><b>Backend:</b></span> C++, Java, Hibernate, Spring, Spring Boot
-          <br />
-          <span className="aboutp1s2"><b>Database:</b></span> MySQL
-          <br />
-          <span className="aboutp1s2"><b>Tools:</b></span> Git, Jira, Figma, VS Code (React), NetBeans 22, Eclipse (Java)
-        </p>
-
-        <p className="aboutp1">
           I enjoy building clean, user-friendly, and high-performance web applications. I continuously challenge myself to
           learn new technologies and apply them in real-world projects that solve problems and add value.
         </p>

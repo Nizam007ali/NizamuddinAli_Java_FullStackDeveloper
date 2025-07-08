@@ -1,22 +1,19 @@
 .freelance {
-  margin: 50px 50px 0px;
+  margin: 50px 30px 0px;
   margin-top: 20vh;
-  padding: 10px 20px 0px;
+  padding: 20px;
   font-family: 'Segoe UI', sans-serif;
+  background-color: var(--card-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  border-radius: 10px;
+  color: var(--text-color);
 }
 
 .freelance-title {
   font-size: 2rem;
   text-align: center;
-  color: #007bff;
+  color: var(--accent-color);
   margin-bottom: 20px;
-}
-
-.freelance-desc {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1rem;
-  color: #444;
 }
 
 .freelance-form {
@@ -27,29 +24,39 @@
 .freelance-form label {
   margin-bottom: 5px;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 .freelance-form input,
 .freelance-form textarea,
 .freelance-form select {
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.freelance-form input:focus,
+.freelance-form textarea:focus,
+.freelance-form select:focus {
+  border-color: var(--accent-color);
 }
 
 .freelance-button {
-  background: #007bff;
+  background: var(--accent-color);
   color: #fff;
   border: none;
-  padding: 12px 12px 12px 0px;
+  padding: 12px 20px;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
-  width: auto;
+  width: fit-content;
 }
 
 .freelance-button:hover {
@@ -59,18 +66,50 @@
 .freelance-price {
   font-weight: bold;
   font-size: 1rem;
-  color: #007bff;
+  color: var(--accent-color);
   margin-bottom: 20px;
 }
 
 .formgridp {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 50px;
-  row-gap: 6px;
+  gap: 20px;
+  row-gap: 12px;
 }
 
-@media (min-width:700px) {
+.formgridc {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 📱 Small screens ≤ 600px */
+@media (max-width: 600px) {
+  .freelance {
+    padding: 16px;
+  }
+
+  .freelance-title {
+    font-size: 1.6rem;
+  }
+
+  .freelance-form input,
+  .freelance-form textarea,
+  .freelance-form select {
+    font-size: 0.9rem;
+  }
+
+  .freelance-button {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+/* 💻 Medium screens > 600px and ≤ 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .freelance {
+    padding: 20px 30px;
+  }
+
   .formgridp {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -79,9 +118,4 @@
   .formgridc:nth-child(6) {
     grid-column: span 2;
   }
-}
-
-.formgridc {
-  display: flex;
-  flex-direction: column;
 }

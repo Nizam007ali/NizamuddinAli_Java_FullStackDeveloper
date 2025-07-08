@@ -1,35 +1,53 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --heading-color: #007bff;
+  --subheading-bg: #f9f9f9;
+  --border-color: #ddd;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --heading-color: #66b2ff;
+  --subheading-bg: #2a2a2a;
+  --border-color: #444;
+}
+
 .skill {
   max-width: 1200px;
   margin: 40px auto;
   margin-top: 22vh;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .skill h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
-  color: #007bff;
-  border-bottom: 2px solid #ddd;
+  color: var(--heading-color);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 10px;
 }
 
 .skill h3 {
   font-size: 1.8rem;
   margin-top: 30px;
-  color: #333;
-  border-left: 5px solid #007bff;
+  color: var(--text-color);
+  border-left: 5px solid var(--heading-color);
   padding-left: 10px;
-  background: #f9f9f9;
+  background: var(--subheading-bg);
 }
 
 .skill h4 {
   margin-top: 20px;
   font-size: 1.4rem;
-  color: #007bff;
+  color: var(--heading-color);
 }
 
 .skill p {
@@ -38,18 +56,32 @@
   text-align: justify;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
+/* Anchor tags for section jump */
+.skill a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+.skill a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Responsive Media Queries
+=========================== */
+
+/* Devices up to 1024px */
+@media (max-width: 1024px) {
   .skill {
-    padding: 10px;
+    padding: 15px;
   }
 
   .skill h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .skill h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .skill h4 {
@@ -57,6 +89,34 @@
   }
 
   .skill p {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
   }
+}
+
+/* Devices up to 600px */
+@media (max-width: 600px) {
+  .skill {
+    padding: 10px;
+  }
+
+  .skill h2 {
+    font-size: 1.8rem;
+  }
+
+  .skill h3 {
+    font-size: 1.4rem;
+  }
+
+  .skill h4 {
+    font-size: 1.1rem;
+  }
+
+  .skill p {
+    font-size: 0.92rem;
+  }
+}
+
+.skill h3,
+.skill h4 {
+  scroll-margin-top: 26vh;
 }
