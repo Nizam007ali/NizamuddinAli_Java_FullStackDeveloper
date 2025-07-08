@@ -10,6 +10,8 @@
 .about .container {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .abouth1 {
@@ -53,14 +55,15 @@
 }
 
 .download-button {
-  display: inline-block;
   padding: 10px 16px;
   background-color: var(--accent-color);
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
   margin-top: 20px;
+  align-self: flex-start;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -80,12 +83,15 @@
 
   .download-button {
     font-size: 0.9rem;
-    width: 100%;
-    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
+
+  .download-button {
+    align-self: center;
+  }
+
   .abouth1 {
     font-size: 1.6rem;
   }
