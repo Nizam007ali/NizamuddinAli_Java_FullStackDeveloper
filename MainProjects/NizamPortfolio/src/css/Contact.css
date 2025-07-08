@@ -63,7 +63,6 @@
   background-color: #0056b3;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .contact {
     margin: 18vh 10px 1vh;

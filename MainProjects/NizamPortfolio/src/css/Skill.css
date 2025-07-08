@@ -56,7 +56,6 @@
   text-align: justify;
 }
 
-/* Anchor tags for section jump */
 .skill a {
   color: var(--heading-color);
   text-decoration: none;
@@ -66,11 +65,6 @@
   text-decoration: underline;
 }
 
-/* ===========================
-   Responsive Media Queries
-=========================== */
-
-/* Devices up to 1024px */
 @media (max-width: 1024px) {
   .skill {
     padding: 15px;

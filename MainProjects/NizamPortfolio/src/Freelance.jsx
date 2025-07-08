@@ -8,7 +8,6 @@ function Freelance() {
   const [pages, setPages] = useState(1);
   const [price, setPrice] = useState(0);
 
-  // ✅ Calculate price based on type & pages
   const calculatePrice = (type, pages) => {
     let base = 0, perPage = 0, included = 0;
 
@@ -24,7 +23,6 @@ function Freelance() {
     return base + (extraPages * perPage);
   };
 
-  // ✅ Update price when type/pages change
   const updatePrice = (type, pages) => {
     const cost = calculatePrice(type, pages);
     setPrice(cost);
@@ -42,7 +40,6 @@ function Freelance() {
     updatePrice(type, value);
   };
 
-  // ✅ Load Razorpay script dynamically
   const loadRazorpayScript = () => {
     return new Promise((resolve) => {
       const script = document.createElement('script');
@@ -53,7 +50,6 @@ function Freelance() {
     });
   };
 
-  // ✅ Handle payment
   const handlePayment = async (e) => {
     e.preventDefault();
 

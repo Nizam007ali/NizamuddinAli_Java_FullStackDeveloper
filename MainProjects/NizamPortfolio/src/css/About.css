@@ -69,7 +69,6 @@
   transform: scale(1.05);
 }
 
-/* ✅ Responsive for mobile and tablet */
 @media (max-width: 1024px) {
   .abouth1 {
     font-size: 2rem;

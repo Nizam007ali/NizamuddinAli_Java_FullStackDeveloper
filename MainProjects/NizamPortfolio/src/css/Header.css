@@ -175,7 +175,6 @@ body {
   padding: 1px;
 }
 
-/* ================= Responsive (Tablet) ================= */
 @media (max-width: 1024px) {
 
   .textNone {
@@ -184,7 +183,6 @@ body {
 
 }
 
-/* ================= Responsive (Mobile) ================= */
 @media (max-width: 600px) {
 
   .header {
