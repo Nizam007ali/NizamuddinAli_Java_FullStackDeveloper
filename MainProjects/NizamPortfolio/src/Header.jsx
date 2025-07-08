@@ -46,12 +46,10 @@ function Header() {
             if (x.style.display === "flex") {
                 x.style.display = "none";
                 x1.style.display = "flex";
-                y.style.height = "24vh";
                 document.body.style.overflowY = 'initial';
             } else {
                 x.style.display = "flex";
                 x1.style.display = "none";
-                y.style.height = "58vh";
                 document.body.style.overflowY = 'hidden';
             }
         } else {
@@ -61,7 +59,6 @@ function Header() {
             if (x.style.display === "none") {
                 x.style.display = "flex";
                 x1.style.display = "none";
-                y.style.height = "24vh";
             }
         }
     }
