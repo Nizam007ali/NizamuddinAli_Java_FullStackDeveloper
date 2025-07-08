@@ -20,14 +20,14 @@ function Header() {
     }, []);
 
     useEffect(() => {
-        const handleResize = () => {
-            handleOpen();
-        };
-        window.addEventListener('resize', handleResize);
-        handleResize();
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+        // const handleResize = () => {
+        //     handleOpen();
+        // };
+        // window.addEventListener('resize', handleResize);
+        // handleResize();
+        // return () => {
+        //     window.removeEventListener('resize', handleResize);
+        // };
     }, []);
 
     const navLinks = [
